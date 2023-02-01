@@ -1,5 +1,5 @@
 ## Setup/Task 1
-I downloaded Arduino IDE and I downloaded the Apollo 3 Arduino package, 
+I downloaded Arduino IDE, and I downloaded the Apollo 3 Arduino package.
 
 ## Task 2
 I used Arduino example code to make the LED on the Artemis nano blink. The code set the LED pin to output in its setup section. It then changed the value between high and low every second. When high, current passed through the LED, causing it to light up. The LED off and on is pictured below. 
