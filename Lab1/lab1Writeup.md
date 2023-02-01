@@ -4,7 +4,7 @@ I downloaded Arduino IDE and I downloaded the Apollo 3 Arduino package,
 ## Task 2
 I used Arduino example code to make the LED on the Artemis nano blink. The existing code set the LED pin to output in its setup section. It then changed the value between high and low every second. When high, current passed through the LED, causing it to light up. The LED on and off is pictured below. 
 
-<img src="LED on.jpg" class="img-responsive" alt=""> <img src="LED on.jpg" class="img-responsive" alt="">
+<img src="LED on.jpg" class="img-responsive" alt="" | width=100> <img src="LED on.jpg" class="img-responsive" alt="" | width=100>
 
 ## Task 3
 I used the Arduino example Example2_Serial to print anything I typed into the Serial Monitor. I typed “Hello World” into the “send message line” and it appeared on the serial monitor after I hit enter. My Baud rate needed to be set to 115200 (as specified in the example program).
