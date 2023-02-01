@@ -9,7 +9,7 @@ I used Arduino example code to make the LED on the Artemis nano blink. The code 
 ## Task 3
 I used the Arduino example Example2_Serial to print anything I typed into the Serial Monitor. I typed “Hello World” into the “send message line” and it appeared on the serial monitor after I hit enter. My Baud rate needed to be set to 115200 (as specified in the example program). The typed and printed message are pictured below.
 
-<img src="Serial Message.PNG" class="img-responsive" alt="" width= 300> <img src="Serial Message2.PNG" class="img-responsive" alt="" width=300>
+<img src="Serial Message.PNG" class="img-responsive" alt="" width= 300> <img src="Serial Message 2.PNG" class="img-responsive" alt="" width=300>
 
 ## Task 4
 I used the Arduino example Example4_analogRead to print out readings from sensors on the board. All sensor readings (including the temperature sensor) were printed to the serial monitor. When the board was exposed to the ambient room temperature, the temperature sensor read roughly 32700. When I blew hot air onto the board, the temperature sensor read roughly 33500
