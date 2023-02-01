@@ -14,6 +14,7 @@ I used the Arduino example Example2_Serial to print anything I typed into the Se
 ## Task 4
 I used the Arduino example Example4_analogRead to print out readings from sensors on the board. All sensor readings (including the temperature sensor) were printed to the serial monitor. When the board was exposed to the ambient room temperature, the temperature sensor read roughly 32700. When I blew hot air onto the board, the temperature sensor read roughly 33500
 
+<img src="Temps 1.PNG" class="img-responsive" alt="" width= 300> <img src="Temps 2.PNG" class="img-responsive" alt="" width=300>
 
 
 ## Task 5
