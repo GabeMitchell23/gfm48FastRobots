@@ -25,4 +25,4 @@ I used the Arduino example Example1_MicrophoneOutput to print out the highest fr
 
 ## 5000 task 
 To make a file that lights up the Artemis LED when an A frequency is detected, I mainly used existing code from both Example1_MicrophoneOutput and Blink. The only code that I added is described below in the psuedo code diagram. 
-
+<img src="PsuedoCode.PNG" class="img-responsive" alt="" width= 300>
