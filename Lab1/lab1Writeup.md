@@ -12,14 +12,15 @@ I used the Arduino example Example2_Serial to print anything I typed into the Se
 <img src="Serial Message.PNG" class="img-responsive" alt="" width= 450> <img src="Serial Message 2.PNG" class="img-responsive" alt="" width=450>
 
 ## Task 4
-I used the Arduino example Example4_analogRead to print out readings from sensors on the board. All sensor readings (including the temperature sensor) were printed to the serial monitor. When the board was exposed to the ambient room temperature, the temperature sensor read roughly 32700. When I blew hot air onto the board, the temperature sensor read roughly 33500
+I used the Arduino example Example4_analogRead to print out readings from sensors on the board. All sensor readings (including the temperature sensor) were printed to the serial monitor. When the board was exposed to the ambient room temperature, the temperature sensor read roughly 32700 (left values). When I blew hot air onto the board, the temperature sensor read roughly 33500 (right values). The temperature readings are ADC values of the interanl die temperature. 
 
 <img src="Temps 1.PNG" class="img-responsive" alt="" width= 300> *                      * <img src="Temps 2.PNG" class="img-responsive" alt="" width=281>
 
 
 ## Task 5
-I used the Arduino example Example1_MicrophoneOutput to print out the highest frequency that the board was registering at that time. When the board was exposed to ambient noise in the lab. The highest frequency at any time was seemingly random. However, when I whistled near the board, the highest frequency was consistent over time. 
+I used the Arduino example Example1_MicrophoneOutput to print out the highest frequency that the board was registering at that time. When the board was exposed to ambient noise in the lab. The highest frequency at any time was seemingly random (left values). However, when I whistled near the board, the highest frequency was consistent over time (right values). 
 
+<img src="Freq 1.PNG" class="img-responsive" alt="" width= 300> *                      * <img src="Freq 2.PNG" class="img-responsive" alt="" width=281>
 
 
 ## 5000 task 
