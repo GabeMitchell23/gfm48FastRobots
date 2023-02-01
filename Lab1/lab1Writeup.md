@@ -27,6 +27,6 @@ I used the Arduino example Example1_MicrophoneOutput to print out the highest fr
 To make a file that lights up the Artemis LED when an A frequency is detected, I mainly used existing code from both Example1_MicrophoneOutput and Blink. The only code that I added is described below in the psuedo code diagram. 
 <img src="PsuedoCode.PNG" class="img-responsive" alt="" width= 700>
 
-The code is run in the video below. At each octive, an A#, an A, and an A♭ are played to show if the code can distinguish an A from tones directly preceeding and succeeding it. The code performs well at high frequencies. However, it confuses an A♭ for an A at lower tones.
+The code is run in the video below. At each octive, an A#, an A, and an A♭ are played to show if the code can distinguish an A from tones directly preceeding and succeeding it. The code performs well at high frequencies. However, it confuses an A# for an A at lower tones.
 
 [A Detector Video](https://www.youtube.com/watch?v=F1Si5nIXZrc)
