@@ -18,7 +18,7 @@ I used the Arduino example Example4_analogRead to print out readings from sensor
 
 
 ## Task 5
-I used the Arduino example Example1_MicrophoneOutput to print out the highest frequency that the board was registering at that time. When the board was exposed to ambient noise in the lab. The highest frequency at any time was seemingly random (left values). However, when I whistled near the board, the highest frequency was consistent over time (right values). 
+I used the Arduino example Example1_MicrophoneOutput to print out the highest frequency that the board was registering at that time. When the board was exposed to ambient noise in the lab, the highest frequency at any time was seemingly random (left values). However, when I whistled near the board, the highest frequency was consistent over time (right values). 
 
 <img src="Freq 1.PNG" class="img-responsive" alt="" width= 300> *                      * <img src="Freq 2.PNG" class="img-responsive" alt="" width=290>
 
