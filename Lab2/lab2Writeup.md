@@ -14,7 +14,7 @@ Once both the UUID and MAC address were correctly defined, python bluetooth func
 
 <img src="import_func.PNG" class="img-responsive" alt="" width= 450>   <img src="bluetooth_connection.PNG" class="img-responsive" alt="" width= 450>
 
-## Demo and Task 1
+## Demo
 Python code was provided to students to verify bluetooth communication with the artemis. The code executed arduino functions on the artemis which then communicated back to my laptop. The first two functions queried the values of the characteristic string and characteristic float.
 
 
