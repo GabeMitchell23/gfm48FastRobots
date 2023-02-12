@@ -38,3 +38,9 @@ The second task was creating a new function on the arduino which could be called
 
 <img src="get_time_millis.PNG" class="img-responsive" alt="" width= 450>    <img src="get_time_millis_laptop.PNG" class="img-responsive" alt="" width= 450>
 
+## Task 3: Notification Handler
+A notification handler is triggered whenever the value of a variable is changed. Task 3 asked students to make a notifiation handler that triggers when the value of the characteristic string is changed. The code that I used to make the notification handler was an augmented version of that used by Robby Huang (website: https://lh479.github.io/ECE4960/). The handler is pictured below to the left. When running any other code that changes the charactertistic string, pythong displays as shown below to the right. 
+
+
+
+
