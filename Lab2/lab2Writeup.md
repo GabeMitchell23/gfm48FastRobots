@@ -52,7 +52,12 @@ Psuedo code for the second function is pictured below to the left. Importantly, 
 
 <img src="5s_rapid_psuedo_code.PNG" class="img-responsive" alt="" width= 450>   <img src="5s_rapid_output.PNG" class="img-responsive" alt="" width= 450>
 
+## Task 6
 
+## Effective Data Rate and Overhead 
+There is a non-negligible amount of time for function calls and data to be sent between laptops and the artemis via bluetooth. To quantify this latency, I used the echo command to send 120 bytes of information using various amounts of packets. The time to send the commands and recieve all the echos is shown in the graph below. 
+
+<img src="latency.PNG" class="img-responsive" alt="" width= 450> 
 
 
 
