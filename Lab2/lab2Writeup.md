@@ -46,11 +46,11 @@ A notification handler is triggered whenever the value of a variable is changed.
 ## Task 4 & 5: Get Temperature
 In tasks 4 and 5, students wrote functions to query the temperature over a 5 second interval. The first function needed to take the temperature for every one second that passed, and the second function needed to take as many temperature readings as possible. Psuedo code for the first function is pictured below to the left. The output of the function as seen from my laptop is pictured below to the right. 
 
-<img src="5s_psuedo_code" class="img-responsive" alt="" width= 450>   <img src="5s_output" class="img-responsive" alt="" width= 450>
+<img src="5s_psuedo_code.PNG" class="img-responsive" alt="" width= 450>   <img src="5s_output.PNG" class="img-responsive" alt="" width= 450>
 
 Psuedo code for the second function is pictured below to the left. Importantly, the temperature values could not be returned all at once to my laptop: a single string with all of them would have exceeded the characteristic limit. Accordingly, the characterisitc limit was updated for every temperature value taken, and this change was displayed on my laptop due to the notification handler. The output of about 1 second of data is pictured below to the right. In total, 188 temperature values were taken. 
 
-<img src="5s_rapid_psuedo_code" class="img-responsive" alt="" width= 450>   <img src="5s_rapid_output" class="img-responsive" alt="" width= 450>
+<img src="5s_rapid_psuedo_code.PNG" class="img-responsive" alt="" width= 450>   <img src="5s_rapid_output.PNG" class="img-responsive" alt="" width= 450>
 
 
 
