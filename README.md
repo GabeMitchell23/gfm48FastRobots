@@ -7,3 +7,5 @@ I'm Gabe, a MEng student at Cornell University studying mechanical engineering. 
 [Lab 1, Artemis](Lab1/lab1Writeup.html)
 
 [Lab 2, Bluetooth](Lab2/lab2Writeup.html)
+
+[Lab 3, Time of Flight ](Lab3/lab3Writeup.html)
