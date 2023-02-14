@@ -59,5 +59,7 @@ There is a non-negligible amount of time for function calls and data to be sent 
 
 <img src="latency.PNG" class="img-responsive" alt="" width= 450> 
 
+## Reliability
+To check the reliability of bluetooth messaging, I wrote a program to send messages for every run through of a while loop. The message was a number that increased by one every loop. It was apparent if any one message was not recieved, as that particular number would have been missing from the python output. The output is shown below with no numbers missing.
 
-
+<img src="reliable.PNG" class="img-responsive" alt="" width= 450> 
