@@ -23,3 +23,17 @@ I analyzed sensor performance by taking depth measurements at offsets equal to 4
 <img src="cool_graph.PNG" class="img-responsive" alt="" width= 450> <img src="cool_table.PNG" class="img-responsive" alt="" width= 450> 
 
 For all sets of data, the average measurement varied from the offset by a 50 thousanths to a 300 thousanths of an inch. The sensor consistenly measured over the expected measurement, which I attribute to me pointint the sensor in a direction slightly off-normal form the detected surface. Given that the error was due to me pointing the sensor slightly  off, it is difficult to tell if performance in light or dark is better. However, the standard deviation in the measurments was consistently larger in the dark, so light measurements are more precise. For any one data set, the one second interval over which data was collected yielded 9 data points. The slow rate can be attributed to each data point being sent to the computer before the next one was taken.
+
+## Double Sensor Data
+
+The code to setup the I2C address change is pictured below to the right. The most important features are the delays before and after the Wire.begin() command. These give the sensor that was shut down time to initialize. The output of the two distinct sensors is shown below to the right. 
+
+<img src="two_sensor_data.PNG" class="img-responsive" alt="" width= 450>   <img src="thank_god.PNG" class="img-responsive" alt="" width= 450>
+
+## Double Sensor Speed Analysis
+
+The code to rapidly write time values while waiting for both sensors to have a reading is shown below. On average, there were about 0.1 seconds between instances when both sensors had readings. In this time frame, the loop ran about 35 times on average.
+
+<img src="two_sense_speed.PNG" class="img-responsive" alt="" width= 450>
+
+## Double Sensor Speed Analysis
