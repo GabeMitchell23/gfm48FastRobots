@@ -18,7 +18,7 @@ The example code Example1_ReadDistance will pause until the function distanceSen
 
 ## Single Sensor Data
 
-I analyzed sensor performance by taking depth measurements at offsets equal to 4", 8", 12", 16", and 20" in light and dark conditions. I used the default long range sensor setting, and I used the bluetooth communicaiton setup described in BLANK to transfer data from the artemis to my laptop. The results of the experiment are shown in the graph and table below.
+I analyzed sensor performance by taking depth measurements at offsets equal to 4", 8", 12", 16", and 20" in light and dark conditions. I used the default long range sensor setting, and I used the bluetooth communicaiton setup described in the bluetooth section below to transfer data from the artemis to my laptop. The results of the experiment are shown in the graph and table below.
 
 <img src="cool_graph.PNG" class="img-responsive" alt="" width= 450> <img src="cool_table.PNG" class="img-responsive" alt="" width= 450> 
 
@@ -32,8 +32,18 @@ The code to setup the I2C address change is pictured below to the right. The mos
 
 ## Double Sensor Speed Analysis
 
-The code to rapidly write time values while waiting for both sensors to have a reading is shown below. On average, there were about 0.1 seconds between instances when both sensors had readings. In this time frame, the loop ran about 35 times on average.
+Students were tasked with analyzing how quickly sensors generated readings. I wrote code (shown below) that rapidly wrote time values and waited for both sensors to have a reading. On average, there were about 0.1 seconds between instances when both sensors had readings. In this time frame, the loop ran about 35 times on average.
 
 <img src="two_sense_speed.PNG" class="img-responsive" alt="" width= 450>
 
-## Double Sensor Speed Analysis
+## ToF Sensor Data BlueTooth Transfer
+
+I wrote code to transfer data from the artemis nano to my laptop. The code was the same format as ble_arduino.ino from lab 2. With in this infrastructure, I wrote the command pictured below. This command was used to transfer time of flight data from the artemis to my computer for the sensor performance analysis described above. 
+
+<img src="bluetooth_code.PNG" class="img-responsive" alt="" width= 450>
+
+The data is recieved on the computer via a notificaiton handler, and it is post processed with a little bit of python code. In the end, the data looks as shown, where the top vector is distance readings in inches, and the bottom vector contains arduino time stamps. 
+
+<img src="bluetooth_output.PNG" class="img-responsive" alt="" width= 450>
+
+
