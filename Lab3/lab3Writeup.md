@@ -10,5 +10,14 @@ The physical system is pictured below. For any script where only one sensor is u
 
 <img src="wiring.jpg" class="img-responsive" alt="" width= 450>
 
+## Single Sensor Connection
+
+The example code Example1_ReadDistance will pause until the function distanceSensor.begin() returns true, meaning the artemis nano is communicating with the ToF sensor via I2C. If the sensor fails to connect, the code will output as shown below to the left. When the sensor does connect, the code will disply as shown below to the right. 
+
+<img src="failed2connect.PNG" class="img-responsive" alt="" width= 450>     <img src="connected.PNG" class="img-responsive" alt="" width= 450>
+
 ## Single Sensor Data
 
+I analyzed sensor performance by taking depth measurements at offsets equal to 4", 8", 12", 16", and 20" in light and dark conditions. I used the default long range sensor setting, and I used the bluetooth communicaiton setup described in BLANK to transfer data from the artemis to my laptop. The results of the experiment are shown in the graph and table below.
+
+<img src="cool_graph.PNG" class="img-responsive" alt="" width= 450> <img src="cool_table.PNG" class="img-responsive" alt="" width= 450> 
