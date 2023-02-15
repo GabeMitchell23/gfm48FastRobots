@@ -51,3 +51,7 @@ The data is recieved on the computer via a notificaiton handler, and it is post 
 
 ## Discussion on Infrared Sensors
 The two types of infrared sensors are active and passive. Active distance sensors emit IR radiation that is then reflected off surfaces and recieved by the sensor. Passive distance sensors emit no light and sense the light emitted naturally by the environment. Active IR sensors use more power, but passive IR sensors rely on obstables in the environment having IR signatures that are distinguishable from the surroundings. Among active IR distance sensors, there are those based on time of flight and those based on triangulation. Time of flight sensors measure distance based upon the time of traversal for signal of known speed. Triangulation sensors measure distance based upon the angle that a signal must leave the transmitter in order to be reflected towards the reciever. 
+
+## Infrared Sensor Sensitify
+
+The sensor had no issues reading distances off objects of different colors. Notably, correct position readings were given for black objects, which absorb radiation in the visible spectrum. There was also no issue finding distances for surfaces that were flat vs uneven.
