@@ -6,4 +6,9 @@ The default I2C address of the ToF sensor is 0x52. For this reason, when two are
 
 <img src="schematic.PNG" class="img-responsive" alt="" width= 450>
 
+The physical system is pictured below. For any script where only one sensor is utilized, either of the two ToF sensors could be unplugged from the QWIIC multiport. 
+
+<img src="wire.JPEG" class="img-responsive" alt="" width= 450>
+
+## Single Sensor Data
 
