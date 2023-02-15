@@ -30,17 +30,17 @@ For all sets of data, the mean measurement was larger than the offset by around 
 
 The code to setup the I2C address change is pictured in the top image below. The most important features are the delays before and after the Wire.begin() command. These give the sensor that was shut down time to initialize. The output of the two distinct sensors is shown in the bottom image below
 
-<img src="two_sensor_data.PNG" class="img-responsive" alt="" width= 550>   <img src="thank_god.PNG" class="img-responsive" alt="" width= 550>
+<img src="two_sensor_data.PNG" class="img-responsive" alt="" width= 650>   <img src="thank_god.PNG" class="img-responsive" alt="" width= 550>
 
 ## Double Sensor Speed Analysis
 
-Students were tasked with analyzing how quickly sensors generated readings. I wrote code (shown below) that rapidly wrote time values and waited for both sensors to have a reading. On average, there were about 0.1 seconds between instances when both sensors had readings. In this time frame, the loop ran about 35 times on average.
+Students were tasked with analyzing how quickly sensors generated readings. I wrote code (shown below) that rapidly wrote time values and waited for both sensors to have a reading. On average, there were about 0.1 seconds between instances when both sensors had readings. In this time frame, the loop ran 35 times on average.
 
 <img src="two_sense_speed.PNG" class="img-responsive" alt="" width= 450>
 
 ## ToF Sensor Data BlueTooth Transfer
 
-I wrote code to transfer data from the artemis nano to my laptop. The code was the same format as ble_arduino.ino from lab 2. With in this infrastructure, I wrote the command pictured below. This command was used to transfer time of flight data from the artemis to my computer for the sensor performance analysis described above. 
+I wrote code to transfer data from the artemis nano to my laptop. The code was the same format as ble_arduino.ino from lab 2. Within this infrastructure, I wrote the command pictured below. This command was used to transfer time of flight data from the artemis to my computer for the sensor performance analysis described above. 
 
 <img src="bluetooth_code.PNG" class="img-responsive" alt="" width= 450>
 
@@ -50,4 +50,4 @@ The data is recieved on the computer via a notificaiton handler, and it is post 
 
 
 ## Discussion on Infrared Sensors
-The two types of infrared sensors are active and passive. Active distance sensors emit IR radiation that is then reflected off surfaces and recieved by the sensor. Passive distance sensors emit no light and sense the light emitted naturally by the environment. Active IR sensors use more power, but passive IR sensors rely on obstables in the environment having IR signatures that are distinguishable from the surroundings. Among active IR distance sensors, there are those based on time of flight and those based on triangulation. Time of flight sensors measure distance based upon the time of traversal for signal of known speed. Triangulation sensor measure distance based upon the angle that a signal much leave the transmitter in order to be reflected towards the reciever. 
+The two types of infrared sensors are active and passive. Active distance sensors emit IR radiation that is then reflected off surfaces and recieved by the sensor. Passive distance sensors emit no light and sense the light emitted naturally by the environment. Active IR sensors use more power, but passive IR sensors rely on obstables in the environment having IR signatures that are distinguishable from the surroundings. Among active IR distance sensors, there are those based on time of flight and those based on triangulation. Time of flight sensors measure distance based upon the time of traversal for signal of known speed. Triangulation sensors measure distance based upon the angle that a signal must leave the transmitter in order to be reflected towards the reciever. 
