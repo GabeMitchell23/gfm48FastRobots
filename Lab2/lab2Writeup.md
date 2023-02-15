@@ -55,6 +55,8 @@ Psuedo code for the second function is pictured below to the left. Importantly, 
 <img src="5s_rapid_psuedo_code.PNG" class="img-responsive" alt="" width= 350>   <img src="5s_rapid_output.PNG" class="img-responsive" alt="" width= 350>
 
 ## Task 6
+The artemis has 384 kB or RAM. If the artemis were to take 16-bit data points at 150 Hz for 5s, that would total to 16 * 5 * 150 = 12000 bits = 1500 bytes. Because there are 348000 bytes in the artemis's RAM, the system could handle 348000/12000 = 256 instances of this 5 second transmission before running out of storage. 
+
 
 ## Effective Data Rate and Overhead 
 There is a non-negligible amount of time for function calls and data tranmission via bluetooth. To quantify this latency, I used the echo command to send 120 bytes of information using various amounts of packets. The time to send the commands and recieve all the echos is shown in the graph below. 
