@@ -50,18 +50,18 @@ In tasks 4 and 5, students wrote functions to query the temperature over a 5 sec
 
 <img src="5s_output.PNG" class="img-responsive" alt="" width= 600>
 
-Psuedo code for the second function is pictured below to the left. Importantly, the temperature values could not be returned all at once to my laptop: a single string with all of them would have exceeded the characteristic limit. Accordingly, the characterisitc limit was updated for every temperature value taken, and this change was displayed on my laptop due to the notification handler. The output of about 1 second of data is pictured below to the right. In total, 188 temperature values were taken. 
+Psuedo code for the second function is pictured below to the left. Importantly, the temperature values could not be returned all at once to my laptop: a single string with all of them would have exceeded the characteristic limit. Accordingly, the characterisitc string was updated for every temperature value taken, and this change was displayed on my laptop due to the notification handler. The output of about 1 second of data is pictured below to the right. In total, 188 temperature values were taken. 
 
 <img src="5s_rapid_psuedo_code.PNG" class="img-responsive" alt="" width= 350>   <img src="5s_rapid_output.PNG" class="img-responsive" alt="" width= 350>
 
 ## Task 6
 
 ## Effective Data Rate and Overhead 
-There is a non-negligible amount of time for function calls and data to be sent between laptops and the artemis via bluetooth. To quantify this latency, I used the echo command to send 120 bytes of information using various amounts of packets. The time to send the commands and recieve all the echos is shown in the graph below. 
+There is a non-negligible amount of time for function calls and data tranmission via bluetooth. To quantify this latency, I used the echo command to send 120 bytes of information using various amounts of packets. The time to send the commands and recieve all the echos is shown in the graph below. 
 
 <img src="latency.PNG" class="img-responsive" alt="" width= 450> 
 
 ## Reliability
-To check the reliability of bluetooth messaging, I wrote a program to send messages for every run through of a while loop. The message was a number that increased by one every loop. It was apparent if any one message was not recieved, as that particular number would have been missing from the python output. The output is shown below with no numbers missing.
+To check reliability, I wrote a program to send bluetooth messages for every run through of a while loop. The message was a number that increased by one every loop. It was apparent if any one message was not recieved, as that particular number would have been missing from the python output. The output is shown below with no numbers missing.
 
-<img src="reliable.PNG" class="img-responsive" alt="" width= 450> 
+<img src="reliable.PNG" class="img-responsive" alt="" width= 30> 
