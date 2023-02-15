@@ -1,5 +1,5 @@
 # Lab 2 Overview 
-MAE 5190 Lab 1 introduced students to the Artemis Nano board. I ran exisiting example functions to complete simple tasks. I then wrote my own file to complete a task.
+In lab 2, students set up a bluetooth connection between their laptopn and the artemis nano. They then created and executed functions that transmitted data via bluetooth. 
 
 ## Bluetooth Setup 
 For my computer to communicate with the artemis nano via bluetooth, the nano's MAC address was printed by running ble_arduino.ino. 
