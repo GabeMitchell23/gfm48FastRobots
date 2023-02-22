@@ -70,8 +70,13 @@ To really accentuate the benefits of both the gyroscopes and accelerometers on t
 
 <img src="comp_filter_eqns.PNG" class="img-responsive" alt="" width= 850> 
 
-The pitch and roll taken when the IMU is steady are shown in the graphs below. 
+The pitch and roll taken when the IMU is steady are shown in the graphs below. α=0.3 like before. 
 
+<img src="comp_graph.PNG" class="img-responsive" alt="" width= 850> 
+
+Note the graphs do not drift, and they are precise to plus minus less than a degree. The Complimentary filter also performed well when the IMU was actually rotating, as shown in the graph below. 
+
+<img src="comp_graph_moving.PNG" class="img-responsive" alt="" width= 850> 
 
 
 
