@@ -30,6 +30,25 @@ The 3 roll graphs are pictured below.
 
 <img src="accel_roll.PNG" class="img-responsive" alt="" width= 850> 
 
-All data sets were taken over a 1 second time span, and each contains about 300 data points. 
+All data sets were taken over a 1 second time span, and each contains about 300 data points. The sensor readings vary randomly about a constant average value. The precision is about ± 1 degree. The fourier decomposition of the angular position signals from the accelerometer is shown below. Very low frequencies are the most present. The cut off frequency for my low pass filter will therefore be 50Hz. 
+
+<img src="fourier.PNG" class="img-responsive" alt="" width= 850> 
+
+The time constant of the low pass filter is therefore 
+
+<img src="rc.PNG" class="img-responsive" alt="" width= 850> 
+
+And the low pass filter constant is equal to (given than the period between measurments is roughly 1/300Hz)
+
+<img src="alpha.PNG" class="img-responsive" alt="" width= 850> 
+
+The low pass filter can be applied to the accelerometer using the equation below. 
+
+<img src="accel_lpf.PNG" class="img-responsive" alt="" width= 850> 
+
+The low pass filter yielded the graph below to the left. Because the value of α that I calculated was relatively large compared to that used in class, I played around with different α values. I found that low values such as α=0.1 were the most precise, as shown in the graph below to the right. However, I was worried that low values would put too much weight on the previous reading and therefore misrepresent readings when the IMU is rotating rapidly. Accordingly, I settled on α=0.3 for the rest of the lab.
+
+<img src="accel_lpf_graph.PNG" class="img-responsive" alt="" width= 850> 
+
 
 
