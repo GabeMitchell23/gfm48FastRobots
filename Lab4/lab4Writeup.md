@@ -83,3 +83,14 @@ Note the graphs do not drift, and they are precise to plus minus less than a deg
 The last task before placing electronics onto the car was integrating the IMU and the ToF sensor. Integrating the ToF sensor noticably slowed down the sampling rate, as data was only taken at time instances when both the IMU and ToF were ready to return a value. The frequency went down from 300 Hz with the IMU alone to about 10Hz when the ToF sensor was added. The data for the IMU and the ToF sensor over a 5 second period are shown in the graphs below. 
 <img src="imu_int.PNG" class="img-responsive" alt="" width= 850> 
 
+## Task 4: Integration onto Car
+The electronics on the car are pictured again below. The ToF sensor was pointed forward so that it could sense obstacles in front of the car, and the IMU was placed such that it was flat. 
+
+<img src="car_wiring.jpg" class="img-responsive" alt="" width= 600> 
+
+The video of the stunt is pasted below. The car approaches a wall and then spins. 
+
+[Car Stunt](https://www.youtube.com/watch?v=Lc97Fxj513U)
+
+The IMU and ToF sensor graphs are shown below. 
+
