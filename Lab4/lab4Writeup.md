@@ -18,7 +18,7 @@ First, students ran example code provided in the IMU library to verify functiona
 
 
 ## Task 1: Accelerometer
-Students were tasked with using the accelerometer to calculate the pitch and role of the IMU when the it was oriented at -90, 0, and 90 degrees. To conver the acceration output to angular position values, the equations from lecture were used.
+Students were tasked with using the accelerometer to calculate the pitch and role of the IMU when the it was oriented at -90, 0, and 90 degrees. To convert the acceleration output to angular position values, the equations from lecture were used.
 
 <img src="accel_eqns.PNG" class="img-responsive" alt="" width= 600> 
 
@@ -50,5 +50,19 @@ The low pass filter yielded the graph below to the left. Because the value of α
 
 <img src="accel_lpf_graph.PNG" class="img-responsive" alt="" width= 850> 
 
+## Task 2: Gyroscope
+Students were tasked with using the gyroscope  to calculate the pitch, role, and yaw of the IMU when the it was oriented at -90, 0, and 90 degrees. To convert the acceleration output to angular position values, the equations from lecture were used.
 
+<img src="gyro_eqns.PNG" class="img-responsive" alt="" width= 600> 
 
+The 3 pitch graphs are pictured below. 
+
+<img src="gyro_pitch.PNG" class="img-responsive" alt="" width= 850> 
+
+The 3 roll graphs are pictured below. 
+
+<img src="gyro_roll.PNG" class="img-responsive" alt="" width= 850> 
+
+The 3 yaw graphs are pictured below. 
+
+<img src="gyro_yaw.PNG" class="img-responsive" alt="" width= 850> 
