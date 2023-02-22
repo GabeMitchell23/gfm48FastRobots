@@ -79,5 +79,7 @@ Note the graphs do not drift, and they are precise to plus minus less than a deg
 <img src="comp_graph_moving.PNG" class="img-responsive" alt="" width= 850> 
 
 
-
+## Task 3: ToF + IMU
+The last task before placing electronics onto the car was integrating the IMU and the ToF sensor. Integrating the ToF sensor noticably slowed down the sampling rate, as data was only taken at time instances when both the IMU and ToF were ready to return a value. The frequency went down from 300 Hz with the IMU alone to about 10Hz when the ToF sensor was added. The data for the IMU and the ToF sensor over a 5 second period are shown in the graphs below. 
+<img src="imu_int.PNG" class="img-responsive" alt="" width= 850> 
 
