@@ -1,13 +1,13 @@
 # Lab 4 Overview
-During Lab 4, students worked with an inertial measurment unit (IMU) to calculate angular position. The gyroscope and accelerometer on the IMU were utilized. Then, students queried data from both the IMU and the ToF sensor from lab 3. The sensors as wired for the majority of the lab are pictured below.  
+During Lab 4, students worked with an inertial measurement  unit (IMU) to calculate angular position. The gyroscope and accelerometer on the IMU were utilized. Then, students queried data from both the IMU and the ToF sensor from lab 3. The sensors as wired for the majority of the lab are pictured below.  
 
 <img src="wiring.jpg" class="img-responsive" alt="" width= 600> 
 
-At the end of the lab, the electronics were removed from my laptop and plugged into a separate battery. The artemis, battery, and sensors were then fastened onto the RC car, where they querieid and transferred data as the car performed a stunt. The electronics on the car are pictured below. 
+At the end of the lab, the electronics were removed from my laptop and plugged into a separate battery. The artemis, battery, and sensors were then fastened onto the RC car, where they took and transferred data as the car performed a stunt. The electronics on the car are pictured below. 
 
 <img src="car_wiring.jpg" class="img-responsive" alt="" width= 600> 
 
-An accelerometer works by placing a capacitor plate on a spring. If the IMU accelerates in the direction of the spring, the force will move the capacitor plate, causing the capacitance to change. This change is quantifiable with additional circuitry and can be related to the acceleration. Gyroscopes detect the angular speed of the IMU. The reading can therefore be integrated to find the change in angular position with respect to a reference. The convention that this lab follows is as pictured below. The "forward" direciton of the vehcile and IMU is the positive x direction, the y direction points to the right, and z therefore must point down. The pitch, role, and yaw are as drawn. 
+An accelerometer works by placing a capacitor plate on a spring. If the IMU accelerates in the direction of the spring, the force will move the capacitor plate, causing the capacitance to change. This change is quantifiable with additional circuitry and can be related to the acceleration. Gyroscopes detect the angular speed of the IMU. The reading can therefore be integrated to find the change in angular position with respect to a reference. The convention that this lab follows is as pictured below. The "forward" direction of the vehicle and IMU is the positive x direction, the y direction points to the right, and z therefore must point down. The pitch, role, and yaw are as drawn. 
 
 <img src="convention.PNG" class="img-responsive" alt="" width= 600> 
 
@@ -17,11 +17,11 @@ First, students ran example code provided in the IMU library to verify functiona
 <img src="imu_example.PNG" class="img-responsive" alt="" width= 600> 
 
 ## Task Run speed
-The code for all the accelerometer and gyrscope tasks below was written to run as fast as possible. Within the loops where the code queries the sensors, the code does nothing else, such as printing to the serial monitor or writing to the characteristic float (and therefore transmitting data via bluetooth). When the sensors return a value, the code stores it in a long arrary. Only after data is finished being retrieved from the sensors does data begin being transmitted via bluetooth. This coding method resulted in sampling at 350 Hz at the fastest. 
+The code for all the accelerometer and gyroscope tasks below was written to run as fast as possible. Within the loops where the code queries the sensors, the code does nothing else, such as printing to the serial monitor or writing to the characteristic float (and therefore transmitting data via bluetooth). When the sensors return a value, the code stores it in a long array. Only after data is finished being retrieved from the sensors does data begin being transmitted via bluetooth. This coding method resulted in sampling at 350 Hz at the fastest. 
 
 
 ## Task 1: Accelerometer
-Students were tasked with using the accelerometer to calculate the pitch and role of the IMU when the it was oriented at -90, 0, and 90 degrees. To convert the acceleration output to angular position values, the equations from lecture were used.
+Students were tasked with using the accelerometer to calculate the pitch and roll of the IMU when it was oriented at -90, 0, and 90 degrees. To convert the acceleration output to angular position values, the equations from lecture were used.
 
 <img src="accel_eqns.PNG" class="img-responsive" alt="" width= 600> 
 
@@ -41,7 +41,7 @@ The time constant of the low pass filter is therefore
 
 <img src="rc.PNG" class="img-responsive" alt="" width= 850> 
 
-And the low pass filter constant is equal to (given than the period between measurments is roughly 1/300Hz)
+And the low pass filter constant is equal to (given than the period between measurements  is roughly 1/300Hz)
 
 <img src="alpha.PNG" class="img-responsive" alt="" width= 850> 
 
@@ -66,7 +66,7 @@ Again, data samples were taken over 1 second, and there are about 300 points per
 
 <img src="gyro_decrease.PNG" class="img-responsive" alt="" width= 850> 
 
-To really accentuate the benefits of both the gyroscopes and accelerometers on the IMU, a complimentary filter was implemented. The complimentary filter combines raw accelerometer readings with integrated gyroscope readings. The equations for pitch and roll as predicted by the complimentary filter are shown below.
+To really accentuate the benefits of both the gyroscopes and accelerometers on the IMU, a complimentary filter was implemented. The complementary  filter combines raw accelerometer readings with integrated gyroscope readings. The equations for pitch and roll as predicted by the complementary filter are shown below.
 
 <img src="comp_filter_eqns.PNG" class="img-responsive" alt="" width= 850> 
 
@@ -74,13 +74,13 @@ The pitch and roll taken when the IMU is steady are shown in the graphs below. Î
 
 <img src="comp_graph.PNG" class="img-responsive" alt="" width= 850> 
 
-Note the graphs do not drift, and they are precise to plus minus less than a degree. The Complimentary filter also performed well when the IMU was actually rotating, as shown in the graph below. 
+Note the graphs do not drift, and they are precise to plus minus less than a degree. The complementary  filter also performed well when the IMU was actually rotating, as shown in the graph below. 
 
 <img src="comp_graph_moving.PNG" class="img-responsive" alt="" width= 850> 
 
 
 ## Task 3: ToF + IMU
-The last task before placing electronics onto the car was integrating the IMU and the ToF sensor. Integrating the ToF sensor noticably slowed down the sampling rate, as data was only taken at time instances when both the IMU and ToF were ready to return a value. The frequency went down from 300 Hz with the IMU alone to about 10Hz when the ToF sensor was added. The data for the IMU and the ToF sensor over a 5 second period are shown in the graphs below. 
+The last task before placing electronics onto the car was integrating the IMU and the ToF sensor. Integrating the ToF sensor noticeably  slowed down the sampling rate, as data was only taken at time instances when both the IMU and ToF were ready to return a value. The frequency went down from 300 Hz with the IMU alone to about 10Hz when the ToF sensor was added. The data for the IMU and the ToF sensor over a 5 second period are shown in the graphs below. 
 <img src="imu_int.PNG" class="img-responsive" alt="" width= 850> 
 
 ## Task 4: Integration onto Car
@@ -96,4 +96,4 @@ The IMU and ToF sensor graphs are shown below.
 
 <img src="car_graph.PNG" class="img-responsive" alt="" width= 850> 
 
-Note that the ToF data is as expected: it decreases up until the car reaches the wall, and then it jumps up when the car spins. The pitch data does not behave as expected: it should be constant for the entire stunt, as the car always stays flat on the ground. I attribute the error to the accelerometer picking up an acceleration as the car moves along the x-axis (forward). This error can be mitigated in future labs by decreasing the weight of the accelerometer term in the complimentary filter.
+Note that the ToF data is as expected: it decreases up until the car reaches the wall, and then it jumps up when the car spins. The pitch data does not behave as expected: it should be constant for the entire stunt, as the car always stays flat on the ground. I attribute the error to the accelerometer picking up an acceleration as the car moves along the x-axis (forward). This error can be mitigated in future labs by decreasing the weight of the accelerometer term in the complementary filter.
