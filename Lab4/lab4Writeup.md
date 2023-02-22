@@ -51,18 +51,14 @@ The low pass filter yielded the graph below to the left. Because the value of α
 <img src="accel_lpf_graph.PNG" class="img-responsive" alt="" width= 850> 
 
 ## Task 2: Gyroscope
-Students were tasked with using the gyroscope  to calculate the pitch, role, and yaw of the IMU when the it was oriented at -90, 0, and 90 degrees. To convert the acceleration output to angular position values, the equations from lecture were used.
+Students were tasked with using the gyroscope to calculate the pitch, role, and yaw of the IMU at any position. Note that so long as the IMU sits still, its orientation will not change the reading of the gyroscope, as the gyroscope measures angular speed, not position. When the angular speed is integrated to find change in angular position, the change is with respect to an arbitrary reference.
 
 <img src="gyro_eqns.PNG" class="img-responsive" alt="" width= 600> 
 
-The 3 pitch graphs are pictured below. 
+The 3 angular position graphs are pictured below 
 
-<img src="gyro_pitch.PNG" class="img-responsive" alt="" width= 850> 
+<img src="gyro_graph.PNG" class="img-responsive" alt="" width= 850> 
 
-The 3 roll graphs are pictured below. 
+Again, data samples were taken over 1 second, and there are about 300 points per graph. The noise on the gyroscope graphs is much lower than the acceleration graphs. However, the gyroscope readings for pitch, roll, and yaw all drift with time. 
 
-<img src="gyro_roll.PNG" class="img-responsive" alt="" width= 850> 
 
-The 3 yaw graphs are pictured below. 
-
-<img src="gyro_yaw.PNG" class="img-responsive" alt="" width= 850> 
