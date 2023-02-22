@@ -18,4 +18,18 @@ First, students ran example code provided in the IMU library to verify functiona
 
 
 ## Task 1: Accelerometer
-Students were tasked with using the accelerometer to calculate the 
+Students were tasked with using the accelerometer to calculate the pitch and role of the IMU when the it was oriented at -90, 0, and 90 degrees. To conver the acceration output to angular position values, the equations from lecture were used.
+
+<img src="accel_eqns.PNG" class="img-responsive" alt="" width= 600> 
+
+The 3 pitch graphs are pictured below. 
+
+<img src="accel_pitch.PNG" class="img-responsive" alt="" width= 600> 
+
+The 3 roll graphs are pictured below. 
+
+<img src="accel_roll.PNG" class="img-responsive" alt="" width= 600> 
+
+All data sets were taken over a 1 second time span, and each contains about 300 data points. 
+
+
