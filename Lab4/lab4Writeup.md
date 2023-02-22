@@ -16,6 +16,9 @@ First, students ran example code provided in the IMU library to verify functiona
 
 <img src="imu_example.PNG" class="img-responsive" alt="" width= 600> 
 
+## Task Run speed
+The code for all the accelerometer and gyrscope tasks below was written to run as fast as possible. Within the loops where the code queries the sensors, the code does nothing else, such as printing to the serial monitor or writing to the characteristic float (and therefore transmitting data via bluetooth). When the sensors return a value, the code stores it in a long arrary. Only after data is finished being retrieved from the sensors does data begin being transmitted via bluetooth. This coding method resulted in sampling at 350 Hz at the fastest. 
+
 
 ## Task 1: Accelerometer
 Students were tasked with using the accelerometer to calculate the pitch and role of the IMU when the it was oriented at -90, 0, and 90 degrees. To convert the acceleration output to angular position values, the equations from lecture were used.
@@ -59,9 +62,17 @@ The 3 angular position graphs are pictured below
 
 <img src="gyro_graph.PNG" class="img-responsive" alt="" width= 850> 
 
-Again, data samples were taken over 1 second, and there are about 300 points per graph. The noise on the gyroscope graphs is much lower than the acceleration graphs. However, the gyroscope readings for pitch, roll, and yaw all drift with time. Decreasing the sampling rate (from 300 Hz to 100 Hz) did negate drift slightly, as shown in the plot below. 
+Again, data samples were taken over 1 second, and there are about 300 points per graph. The noise on the gyroscope graphs is much lower than the acceleration graphs. However, the gyroscope readings for pitch, roll, and yaw all drift with time. Decreasing the sampling rate (from 300 Hz to 100 Hz) did negate drift slightly, as shown in the plot below. In 1 second, the gyrscope pitch reading drifted to -0.35 deg instead of -0.5 deg. 
 
 <img src="gyro_decrease.PNG" class="img-responsive" alt="" width= 850> 
+
+To really accentuate the benefits of both the gyroscopes and accelerometers on the IMU, a complimentary filter was implemented. The complimentary filter combines raw accelerometer readings with integrated gyroscope readings. The equations for pitch and roll as predicted by the complimentary filter are shown below.
+
+<img src="comp_filter_eqns.PNG" class="img-responsive" alt="" width= 850> 
+
+The pitch and roll taken when the IMU is steady are shown in the graphs below. 
+
+
 
 
 
