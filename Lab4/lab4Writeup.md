@@ -59,6 +59,9 @@ The 3 angular position graphs are pictured below
 
 <img src="gyro_graph.PNG" class="img-responsive" alt="" width= 850> 
 
-Again, data samples were taken over 1 second, and there are about 300 points per graph. The noise on the gyroscope graphs is much lower than the acceleration graphs. However, the gyroscope readings for pitch, roll, and yaw all drift with time. 
+Again, data samples were taken over 1 second, and there are about 300 points per graph. The noise on the gyroscope graphs is much lower than the acceleration graphs. However, the gyroscope readings for pitch, roll, and yaw all drift with time. Decreasing the sampling rate (from 300 Hz to 100 Hz) did negate drift slightly, as shown in the plot below. 
+
+<img src="gyro_decrease.PNG" class="img-responsive" alt="" width= 850> 
+
 
 
