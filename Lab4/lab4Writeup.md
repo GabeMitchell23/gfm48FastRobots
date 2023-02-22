@@ -24,11 +24,11 @@ Students were tasked with using the accelerometer to calculate the pitch and rol
 
 The 3 pitch graphs are pictured below. 
 
-<img src="accel_pitch.PNG" class="img-responsive" alt="" width= 600> 
+<img src="accel_pitch.PNG" class="img-responsive" alt="" width= 850> 
 
 The 3 roll graphs are pictured below. 
 
-<img src="accel_roll.PNG" class="img-responsive" alt="" width= 600> 
+<img src="accel_roll.PNG" class="img-responsive" alt="" width= 850> 
 
 All data sets were taken over a 1 second time span, and each contains about 300 data points. 
 
