@@ -94,4 +94,6 @@ The video of the stunt is pasted below. The car approaches a wall and then spins
 
 The IMU and ToF sensor graphs are shown below. 
 
+<img src="car_graph.PNG" class="img-responsive" alt="" width= 850> 
+
 Note that the ToF data is as expected: it decreases up until the car reaches the wall, and then it jumps up when the car spins. The pitch data does not behave as expected: it should be constant for the entire stunt, as the car always stays flat on the ground. I attribute the error to the accelerometer picking up an acceleration as the car moves along the x-axis (forward). This error can be mitigated in future labs by decreasing the weight of the accelerometer term in the complimentary filter.
