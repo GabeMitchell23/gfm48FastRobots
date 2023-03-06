@@ -10,7 +10,7 @@ Before the lab, students determined how they would integrate the motor drivers. 
 ## Power Supply and Osciliscope
 To test the motor drivers, the motors were powered with a power supply, the artemis was powered from my laptop, and the signals from the artemis were displayed on an oscilliscope. A video of the entire set up,  a picture of the scope, and the code being run are shown below. The power supply was set to 4.2V, as that is the voltage of a fully charged single cell battery. The duty cycle was set to 50% using the arduino command "analogWrite()."
 
-[Wheels Power by Power Supply](https://youtu.be/qd_5-uTt7jk)
+[Wheels Powered by Power Supply](https://youtu.be/qd_5-uTt7jk)
 
 <img src="scope.jpg" class="img-responsive" alt="" width= 600> 
 
@@ -22,3 +22,7 @@ After the functionality of the motor drivers was confirmed, all electronics were
 
 <img src="car_front.jpg" class="img-responsive" alt="" width= 420>  <img src="car_back.jpg" class="img-responsive" alt="" width= 420> 
 
+## Integration Testing
+After integration, the functionality of the motors under battery power was verified. A video of all four wheels spinning under battery power is pasted below. 
+
+[All Wheels Powered by Batteries](https://youtu.be/lvr_vKh-EBY)
