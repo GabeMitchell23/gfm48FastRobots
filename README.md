@@ -11,3 +11,5 @@ I'm Gabe, a MEng student at Cornell University studying mechanical engineering. 
 [Lab 3, Time of Flight ](Lab3/lab3Writeup.html)
 
 [Lab 4, IMU](Lab4/lab4Writeup.html)
+
+[Lab 5, Motors](Lab5/lab5Writeup.html)
