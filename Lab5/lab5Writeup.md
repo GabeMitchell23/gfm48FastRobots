@@ -7,4 +7,13 @@ Before the lab, students determined how they would integrate the motor drivers. 
 
 <img src="schematic.PNG" class="img-responsive" alt="" width= 600> 
 
-## 
+## Power Supply and osciliscope
+To test the motor drivers, the motors were powered with a power supply, and the signals from the artemis were displayed on an oscilliscope. A video of the entire set up,  a picture of the scope, and the code being run are shown below. The power supply was set to 4.2V, as that is the voltage of a fully charged single cell battery. The duty cycle was set to 50% using the arduino command "analogWrite()."
+
+[A Detector Video](https://youtu.be/qd_5-uTt7jk)
+
+<img src="scope.jpg" class="img-responsive" alt="" width= 600> 
+
+<img src="test_code.jpg" class="img-responsive" alt="" width= 600> 
+
+
