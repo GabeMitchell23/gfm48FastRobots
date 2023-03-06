@@ -14,6 +14,6 @@ To test the motor drivers, the motors were powered with a power supply, and the 
 
 <img src="scope.jpg" class="img-responsive" alt="" width= 600> 
 
-<img src="test_code.jpg" class="img-responsive" alt="" width= 600> 
+<img src="test_code.PNG" class="img-responsive" alt="" width= 600> 
 
 
