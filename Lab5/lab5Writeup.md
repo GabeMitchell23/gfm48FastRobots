@@ -3,6 +3,8 @@ During Lab 5, students used motor drivers to control motors on the car. The moto
 
 ## Prelab
 
-Before the lab, students determined how they would integrate the motor drivers. My schemetic is shown below. Note that the motors are recieving current from two output pins on the driver, allowing them to spin faster. Note also the battery pictured is only 
+Before the lab, students determined how they would integrate the motor drivers. My schemetic is shown below. Note that the motors are recieving current from two output pins on the driver, allowing them to spin faster. Note also that there are two batteries, one for the motors, and one for the artemis. There are separate power sources because the artemis and the sensors plugged into it have much smaller power needs than the motors.
 
 <img src="schematic.PNG" class="img-responsive" alt="" width= 600> 
+
+## 
