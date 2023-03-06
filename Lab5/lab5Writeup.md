@@ -5,4 +5,4 @@ During Lab 5, students used motor drivers to control motors on the car. The moto
 
 Before the lab, students determined how they would integrate the motor drivers. My schemetic is shown below. Note that the motors are recieving current from two output pins on the driver, allowing them to spin faster.
 
-<img src="schematic.jpg" class="img-responsive" alt="" width= 600> 
+<img src="schematic.PNG" class="img-responsive" alt="" width= 600> 
