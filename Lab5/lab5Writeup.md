@@ -26,3 +26,11 @@ After the functionality of the motor drivers was confirmed, all electronics were
 After integration, the functionality of the motors under battery power was verified. A video of all four wheels spinning under battery power is pasted below. 
 
 [All Wheels Powered by Batteries](https://youtu.be/lvr_vKh-EBY)
+
+## Lower PWM Limits
+The lowest PWM signal that would start the robot from rest was 50 out of 255, or a 20% duty cycle. The exact value of this limit is surely subject to change depending on the charge of the motor battery or the surface beneath the wheels. A video of the robot being moved by a 20% duty cycle is shown below. Note that while the robot starts slow, it begins to speed up once the wheels are moving. This is because the motor torque needed to overcome the inertia of the wheels at rest is greater than that needed to maintain the wheels in motion. 
+
+[Lowest PWM Start](https://youtu.be/YScqIbheEow)
+
+The lowest PWM signal to keep the wheels in motion was also found. The robot started to move with a duty cycle of 50/255, but then it switched to a duty cycle of . Any duty cycle below this would have caused the wheels to stall. 
+
