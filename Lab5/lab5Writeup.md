@@ -32,8 +32,19 @@ The lowest PWM signal that would start the robot from rest was 50 out of 255, or
 
 [Lowest PWM to Start Rotation](https://youtu.be/YScqIbheEow)
 
-The lowest PWM signal to keep the wheels in motion was also found. The robot started to move with a duty cycle of 60/255, but then it switched to a duty cycle of 47/255. Any duty cycle below this would have caused the wheels to stall.
+The lowest PWM signal to keep the wheels in motion was also found. The robot started to move with a duty cycle of 60/255, but then it switched to a duty cycle of 47/255. Any duty cycle below this would have caused the wheels to stall. In the video below, the robot switches to the lesser duty cycle at the 5 second mark. 
 
 [Lowest PWM to Continue Rotation](https://youtu.be/pb3lOt78wqM)
 
 ## Open Loop Control
+To get the car to run in a straight line, the duty cycles of the two motors had to be vastly different. A video of both motors with a duty cycles of 85/255 is shown below. The left wheels clearly turn much faster. 
+
+[Lowest PWM to Continue Rotation](https://youtube.com/shorts/7vyXD9wspjM)
+
+The most successful PWM set was 65 on the left wheels and 120 on the right wheels. The car following the line is shown in the video below. No matter what values the motors were given, performance was very inconsistent. 
+
+https://youtube.com/shorts/7vyXD9wspjM
+
+
+
+
