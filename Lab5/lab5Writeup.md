@@ -41,7 +41,7 @@ The analogWrite command being used to send PWM signals to the motors has a frequ
 <img src="scope.jpg" class="img-responsive" alt="" width= 600> 
 
 ## Open Loop Control
-To get the car to run in a straight line, the duty cycles of the two motors had to be vastly different. A video of both motors with a duty cycles of 85/255 is shown below. The left wheels clearly turn much faster. 
+To get the car to run in a straight line, the duty cycles of the two motors had to be vastly different. A video of both motors with a duty cycle of 85/255 is shown below. The left wheels clearly turn much faster. 
 
 [Lowest PWM to Start Rotation](https://youtube.com/shorts/7vyXD9wspjM)
 
