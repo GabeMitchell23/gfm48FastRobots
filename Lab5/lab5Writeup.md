@@ -20,7 +20,7 @@ To test the motor drivers, the motors were powered with a power supply, the arte
 ## Electronics Integration
 After the functionality of the motor drivers was confirmed, all electronics were integrated into the car. Both the artemis and motor drivers are now being powered by batteries. All of the electronics are mounted using command strips. The front of the car is pictured on the left; the ToF sensors, IMU, and motor drivers are visible. The back of the car is pictured on the right; the artemis and batteries are visible. 
 
-<img src="car_front.jpg" class="img-responsive" alt="" width= 420>  <img src="car_back.jpg" class="img-responsive" alt="" width= 420> 
+<img src="car_front.jpg" class="img-responsive" alt="" width= 320>  <img src="car_back.jpg" class="img-responsive" alt="" width= 320> 
 
 ## Integration Testing
 After integration, the functionality of the motors under battery power was verified. A video of all four wheels spinning under battery power is pasted below. 
