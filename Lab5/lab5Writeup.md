@@ -32,7 +32,7 @@ The lowest PWM signal that would start the robot from rest was 50 out of 255, or
 
 [Lowest PWM to Start Rotation](https://youtu.be/YScqIbheEow)
 
-The lowest PWM signal to keep the wheels in motion was also found. The robot started to move with a duty cycle of 60/255, but then it switched to a duty cycle of 47/255. Any duty cycle below this would have caused the wheels to stall. In the video below, the robot switches to the lesser duty cycle at the 5 second mark. 
+The lowest PWM signal to keep the wheels in motion was also found. In the video below, the robot started to move with a duty cycle of 60/255, but (at the 5 second mark) it switched to a duty cycle of 47/255. Any duty cycle below this would have caused the wheels to stall. 
 
 [Lowest PWM to Continue Rotation](https://youtu.be/pb3lOt78wqM)
 
