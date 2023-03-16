@@ -8,7 +8,7 @@ The code for my 180 degree turn has two primary functions: an actuation and data
 
 The actual code for the collection function is shown below. The time, left PWM signal, right PWM signal, yaw, and ToF data were collected using the previous function, and they were sent to my computer using this function. Note that this function was only run after all actuation and data collection was complete to keep computation as fast as possible. Data transmission occured because a notificaiton runner was running on my laptop, which queried and stored the value of the characteristic string each time it was changed by the collection function. 
 
-<img src="transmission.PNG" class="img-responsive" alt="" width= 900> 
+<img src="transmit.PNG" class="img-responsive" alt="" width= 900> 
 
 
 ## P Control Issues
