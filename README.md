@@ -13,3 +13,5 @@ I'm Gabe, a MEng student at Cornell University studying mechanical engineering. 
 [Lab 4, IMU](Lab4/lab4Writeup.html)
 
 [Lab 5, Motors](Lab5/lab5Writeup.html)
+
+[Lab 6, PID Control](Lab6/lab6Writeup.html)
