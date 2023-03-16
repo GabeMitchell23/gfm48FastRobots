@@ -16,15 +16,18 @@ The actual code for the collection function is shown below. The time, left PWM s
 ## P Control Issues
 One issue I had with code was getting the robot to simply drive in a straight line. The left and right PWM values which caused the robot to drive in a straight line were not only very different, but they varied from one run to another. Another issue was the robot drifting into the wall even after starting its turn at one meter. This often caused the robot's wheels to get caught up and fail to rotate the robot to the reference (an integrator term would have fixed this problem). A video of the robot veering off course and then getting caught up in the wall is linked below. 
 
-[https://youtube.com/shorts/ipwTtwpGaeE](https://youtube.com/shorts/AHA0-MF2qxQ?feature=share)
+[P Control Issues](https://youtube.com/shorts/AHA0-MF2qxQ?feature=share)
 
 
 ## P Control Most Successful Run
 
 The most successful P control run is shown below. In this run, the duty cycles for the motors when driving forward in a straight line were 33.33% for the left motor and 60% for the right motor. The proportional gain was 0.27. Lastly, the base analog write value for the left and right motors were 100 and 120 respectively. The additional analog write value that was multiplied by the control and added to the base was 110 and 120 for the left and right motor respectively. The video linked below shows the run - note that the robot rotated more than 180 degrees. 
 
-https://www.youtube.com/shorts/ipwTtwpGaeE
+[Best P Control Run](https://www.youtube.com/shorts/ipwTtwpGaeE)
 
+Graphs of the ToF sensor, yaw, and PWM signals with respect to time are shown in the images below. 
+
+<img src="PToF.PNG" class="img-responsive" alt="" width= 400>   <img src="Pyaw.PNG" class="img-responsive" alt="" width= 400>  <img src="Pduty.PNG" class="img-responsive" alt="" width= 400>
 
 
 
