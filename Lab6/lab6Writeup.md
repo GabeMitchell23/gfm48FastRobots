@@ -35,3 +35,13 @@ One of the biggest issues with this task was the robot over shooting the 180 deg
 [Best Run, PD Control](https://www.youtube.com/shorts/ipwTtwpGaeE)
 
 <img src="tof_succ1.PNG" class="img-responsive" alt="" width= 400>   <img src="yaw_succ1.PNG" class="img-responsive" alt="" width= 400>  <img src="duty_succ1.PNG" class="img-responsive" alt="" width= 400>
+
+## PID Control and Wind Up
+I was much less successful when impementing PID control, even with windup mitigation. Whereas the PD control mitigated overshoot, PID made the overshoot much worse, as the integrator term grew over time. A video of the robot well overshooting the 180 degree goal is shown below. Another issue was that the robot gyroscope integrator read 180 degrees even when robot overshot the 180 mark. This caused the robot to move forward too early, rather than rotating back to the correct position. 
+
+[PID Overshoot](https://www.youtube.com/shorts/ipwTtwpGaeE)
+
+The overshoot prevention term is pictured. The largest that the term can be is defined by the limit which is a value defined on python when the function call is sent over bluetooth. The limit I used was 180, which was equal to the error before turning began.  
+
+<img src="int_limit.PNG" class="img-responsive" alt="" width= 400>
+
