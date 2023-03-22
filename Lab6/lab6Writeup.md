@@ -34,3 +34,4 @@ One of the biggest issues with this task was the robot over shooting the 180 deg
 
 [Best Run, PD Control](https://www.youtube.com/shorts/ipwTtwpGaeE)
 
+<img src="tof_succ1.PNG" class="img-responsive" alt="" width= 400>   <img src="yaw_succ1.PNG" class="img-responsive" alt="" width= 400>  <img src="duty_succ1.PNG" class="img-responsive" alt="" width= 400>
