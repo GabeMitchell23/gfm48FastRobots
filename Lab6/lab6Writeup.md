@@ -1,8 +1,8 @@
 # Lab 6 Overview
-In Lab 6, students had the option to implemented PID control so that the robot could complete one of two tasks: either approaching and stopping exactly 1 m in front of a wall, or rapidly approaching a wall, spinning exactly 180 degrees, and then driving away from the wall in the opposite direction. I chose the latter task. I started by developing the code infrastructure by running it with a simple set of parameters: slow speeds and only P control. P control was not satisfactory on its own; after I tailored parameters as best as I could, I added integral and derivative terms, which made the robot turn closer to 180 degrees in less time. 
+In Lab 6, students had the option to implemented PID control so that the robot could complete one of two tasks: either approaching and stopping exactly 1 m in front of a wall, or rapidly approaching a wall, spinning exactly 180 degrees, and then driving away from the wall in the opposite direction. I chose the latter task. I started by developing the code infrastructure by running it with a simple set of parameters: slow speeds and only P control. P control was not satisfactory on its own; after I tailored parameters as best as I could, I added integral and derivative terms, which changed the performance. 
 
 ## Code Overview 
-The code for my 180 degree turn has two primary functions: an actuation and data collection function, and then a data transmission function. Pseudo code for the actuation and collection function is shown below. Note that during rotation, the PWM signals sent to the motors are not directly proportional to the control. Rather, there is a base PWM value that the motors will receive even if the control U is zero. This is because the PWM value at which the motors won't spin isn't actually zero. 
+The code for my 180 degree turn has two primary functions: an actuation and data collection function, and then a data transmission function. Pseudo code for the actuation and collection function is shown below. Note that during rotation, the PWM signals sent to the motors are not directly proportional to the control. Rather, there is a base PWM value that the motors will receive even if the control U is zero. This is because the PWM value at which the motors won't spin isn't zero. 
 
 <img src="psuedo1.PNG" class="img-responsive" alt="" width= 900> 
 
@@ -12,7 +12,7 @@ The actual code for the collection function is shown below. The time, left PWM s
 
 
 ## P Control Issues
-One issue I had with code was getting the robot to simply drive in a straight line. The left and right PWM values which caused the robot to drive in a straight line were not only very different, but they varied from one run to another. Another issue was the robot drifting into the wall even after starting its turn at one meter. This often caused the robot's wheels to get caught up and fail to rotate the robot to the reference (an integrator term would have fixed this problem). A video of the robot veering off course and then getting caught up in the wall is linked below. 
+One issue I had was getting the robot to drive in a straight line. The left and right PWM values which caused the robot to drive in a straight line were not only very different, but they varied from one run to another. Another issue was the robot drifting into the wall even after starting its turn at one meter. This often caused the robot's wheels to get caught up and fail to rotate the robot to the reference (an integrator term would have fixed this problem). A video of the robot veering off course and then getting caught up in the wall is linked below. 
 
 [P Control Issues](https://youtube.com/shorts/AHA0-MF2qxQ?feature=share)
 
@@ -30,7 +30,7 @@ Graphs of the ToF sensor, yaw, and PWM signals with respect to time are shown in
 
 
 ## Most Successful Run: PD Control 
-One of the biggest issues with this task was the robot over shooting the 180 degree rotation and never fully returning. PD control mitigated this; before the robot reached 180 degrees, the derivative term was negative, reducing the control output and reducing overshoot. The run with the robot rotating very nearly 180 degrees is shown below. My most successful PD control run had a proportional constant of 0.2 and a derivative constant of 0.13. The base analog write values for the right and left motors were 120 and 100 respectively. The added analog write values multiplied by the error terms and the constants were 120 and 110 for the right and left motors respectively. 
+One of the biggest issues with this task was the robot over shooting the 180 degree rotation and never fully returning. PD control mitigated this; before the robot reached 180 degrees, the derivative term was negative, reducing the control output and reducing overshoot. The run with the robot rotating very nearly 180 degrees is shown below. My most successful PD control run had a proportional constant of 0.2 and a derivative constant of 0.13. The base analog write values for the right and left motors were 120 and 100 respectively. The added analog write values multiplied by the error terms and the constants were 120 and 110 for the right and left motors respectively. A video and graphs for PD control are shown below.
 
 [Best Run, PD Control](https://youtube.com/shorts/UlKN78yMP0w?feature=share)
 
