@@ -19,7 +19,7 @@ One issue I had with code was getting the robot to simply drive in a straight li
 
 ## P Control Most Successful Run
 
-The most successful P control run is shown below. In this run, the duty cycles for the motors when driving forward in a straight line were 33.33% for the left motor and 60% for the right motor. The proportional gain was 0.27. Lastly, the base analog write value for the left and right motors were 100 and 120 respectively. The additional analog write value that was multiplied by the control and added to the base was 110 and 120 for the left and right motor respectively. The video linked below shows the run - note that the robot rotated more than 180 degrees. 
+The most successful P control run is shown below. In this run, the duty cycles for the motors when driving forward in a straight line were 33.33% for the left motor and 60% for the right motor. The proportional gain was 0.27. Lastly, the base analog write value for the left and right motors were 100 and 120 respectively. The additional analog write values that were multiplied by the control and added to the base were 110 and 120 for the left and right motor respectively. The video linked below shows the run - note that the robot rotated more than 180 degrees. 
 
 [Best P Control Run](https://www.youtube.com/shorts/ipwTtwpGaeE)
 
@@ -29,4 +29,8 @@ Graphs of the ToF sensor, yaw, and PWM signals with respect to time are shown in
 
 
 
-## PID Control
+## Most Successful Run: PD Control 
+One of the biggest issues with this task was the robot over shooting the 180 degree rotation and never fully returning. PD control mitigated this; before the robot reached 180 degrees, the derivative of the error and the derivative term were negative, reducing the control output reducing overshoot. The run with the robot rotating very nearly 180 degrees is shown below. My most successful PD control run had a proportional constant of 0.2 and a derivative constant of 0.13. The base analog write values for the right and left motors were 120 and 100 respectively. The added analog write values multiplied by the error terms and the constants were 120 and 110 for the right and left motors respectively. 
+
+[Best Run, PD Control](https://www.youtube.com/shorts/ipwTtwpGaeE)
+
