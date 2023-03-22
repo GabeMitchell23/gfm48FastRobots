@@ -32,14 +32,14 @@ Graphs of the ToF sensor, yaw, and PWM signals with respect to time are shown in
 ## Most Successful Run: PD Control 
 One of the biggest issues with this task was the robot over shooting the 180 degree rotation and never fully returning. PD control mitigated this; before the robot reached 180 degrees, the derivative of the error and the derivative term were negative, reducing the control output reducing overshoot. The run with the robot rotating very nearly 180 degrees is shown below. My most successful PD control run had a proportional constant of 0.2 and a derivative constant of 0.13. The base analog write values for the right and left motors were 120 and 100 respectively. The added analog write values multiplied by the error terms and the constants were 120 and 110 for the right and left motors respectively. 
 
-[Best Run, PD Control](https://www.youtube.com/shorts/ipwTtwpGaeE)
+[Best Run, PD Control](https://youtube.com/shorts/UlKN78yMP0w?feature=share)
 
 <img src="tof_succ1.PNG" class="img-responsive" alt="" width= 400>   <img src="yaw_succ1.PNG" class="img-responsive" alt="" width= 400>  <img src="duty_succ1.PNG" class="img-responsive" alt="" width= 400>
 
 ## PID Control and Wind Up
 I was much less successful when impementing PID control, even with windup mitigation. Whereas the PD control mitigated overshoot, PID made the overshoot much worse, as the integrator term grew over time. A video of the robot well overshooting the 180 degree goal is shown below. Another issue was that the robot gyroscope integrator read 180 degrees even when robot overshot the 180 mark. This caused the robot to move forward too early, rather than rotating back to the correct position. 
 
-[PID Overshoot](https://www.youtube.com/shorts/ipwTtwpGaeE)
+[PID Overshoot](https://youtube.com/shorts/a2QjVaW1moQ?feature=share)
 
 The overshoot prevention term is pictured. The largest that the term can be is defined by the limit which is a value defined on python when the function call is sent over bluetooth. The limit I used was 180, which was equal to the error before turning began.  
 
