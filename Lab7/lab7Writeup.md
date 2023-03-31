@@ -1,1 +1,1 @@
-# I am using slip days for this lab
+# On canvas I said I would use 2 slip days, but I will use more than that
