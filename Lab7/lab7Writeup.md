@@ -28,7 +28,7 @@ A video of the robot speeding towards the wall as data was collected is included
 [Data Collection](https://www.youtube.com/shorts/BtrJDG9qOq8)
 
 ## Kalman Filter Design
-A combination of code and pseudo code is pictured in the diagram below to communicate how I implemented designed the kalman filter.
+A combination of code and pseudo code is pictured in the diagram below to communicate how I designed the kalman filter.
 
 <img src="code_diagram.PNG" class="img-responsive" alt="" width= 900> 
 
