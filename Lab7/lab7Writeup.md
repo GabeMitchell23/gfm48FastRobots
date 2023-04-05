@@ -2,20 +2,20 @@
 I submitted lab 7 before 8am on 4/5. I therefore used 7 slip days. On canvas, I specified that I would only use 2 slip days.
 
 # Lab 7 Overview
-In Lab 7, students wrote a kalman filter to estimate the state of the robot as it drives towards the wall before it executes a stunt. The new state was predicted using the duty cycle of the PWM signals sent to the wheels, and the new state was updated using ToF sensor data. The kalman filter gives a more accurate esimatation of the robot's distance from the wall, because it fuses multiple sources of information. Students then implmented dead reckoning (only accounting for the duty cycle of PWM signals) to estimate the state of the robot between sensor readings. In Lab 8, students will use the kalman filter and extrapolation via dead reckoning to have the robot begin its stunt immediately after reaching 1 meter away from the wall.
+In Lab 7, students wrote a kalman filter to estimate the state of the robot as it drives towards the wall before it executes a stunt. The new state was predicted using the duty cycle of the PWM signals sent to the wheels, and the new state was updated using ToF sensor data. The kalman filter gives a more accurate estimation of the robot's distance from the wall, because it fuses multiple sources of information. Students then implemented  dead reckoning (only accounting for the duty cycle of PWM signals) to estimate the state of the robot between sensor readings. In Lab 8, students will use the kalman filter and extrapolation via dead reckoning to have the robot begin its stunt immediately after reaching 1 meter away from the wall.
 
 ## Methodology
-The kalman filter was designed based based upon ToF sensor data collected as the robot sped toward a wall. The data was analyzed to discern system constants, which inform the prediction step of the Kalman filter. After the filter was designed, it's state prediction was compared to the raw sensor data for additional parameter tuning.  
+The kalman filter was designed based upon ToF sensor data collected as the robot sped toward a wall. The data was analyzed to discern system constants, which inform the prediction step of the Kalman filter. After the filter was designed, its state prediction was compared to the raw sensor data for additional parameter tuning.  
 
 ## Parameter Estimation - Physical Constants
-The robot's state was described with two terms, the position, x, and velocity, v. The physcis that governthe robot's state are described in the equations below; when manipulated, the equations estimate the changes in the robot's state. C_d is the drag coefficient, and F_prop is the propulsive force from the wheels moving the robot forward.
+The robot's state was described with two terms, the position, x, and velocity, v. The physics  that govern the robot's state are described in the equations below; when manipulated, the equations estimate the changes in the robot's state. C_d is the drag coefficient, and F_prop is the propulsive force from the wheels moving the robot forward.
 
 <img src="Eqns.PNG" class="img-responsive" alt="" width= 700> 
 
-When massed, the robot was 0.553 kg. The propulsive force was estimated to be 1N. The last unknown is the drag coefficent, which was optimized after the kalman filter was designed and compared to raw sensor data. 
+When massed, the robot was 0.553 kg. The propulsive force was estimated to be 1N. The last unknown is the drag coefficient, which was optimized after the kalman filter was designed and compared to raw sensor data. 
 
 ## Parameter Estimation - Noise
-The noise in the distance sensor was modeled as a guassian with zero mean and a standard deviation of 0.1m. This was based upon observed values during previous ToF sensor labs. In the dynamics model, the proccess noise for the position and velocity estimation were modeled as guassians with zero mean and standard devitions of 1m and 1m/s respectively. The process noise was made 1 order of magnitude larger than the sensor noise so the the kalman filter would heavily weight the sensor information. 
+The noise in the distance sensor was modeled as a gaussian with zero mean and a standard deviation of 0.1m. This was based upon observed values during previous ToF sensor labs. In the dynamics model, the process noise for the position and velocity estimation were modeled as gaussians with zero mean and standard deviations of 1m and 1m/s respectively. The process noise was made 1 order of magnitude larger than the sensor noise so the the kalman filter would heavily weight the sensor information. 
 
 ## Matrices 
 Based upon the equations and constants described above, the matrices in the kalman filter took the following values
@@ -28,12 +28,12 @@ A video of the robot speeding towards the wall as data was collected is included
 [Data Collection](https://www.youtube.com/shorts/BtrJDG9qOq8)
 
 ## Kalman Filter Design
-A combination of code and psuedo code is picutred in the diagram below to communicate how I implemented designed the kalman filter.
+A combination of code and pseudo code is pictured in the diagram below to communicate how I implemented designed the kalman filter.
 
 <img src="code_diagram.PNG" class="img-responsive" alt="" width= 900> 
 
 ## Results and Parameter Optimization
-The predicted state of the robot is shown in the figures below. The value of the drag coefficient varies from figure to figure. When the coeffient is too small, the estimator predicts the state changes too quickly before it is corrected by the sensor value. When the coeffient is too large, the estimator predicts the state changes too slowly before it is corrected by the sensor value. The optimal drag value of roughly 40 gives the best performance when the robot is nearest the wall, which is when accuracy is the most important.
+The predicted state of the robot is shown in the figures below. The value of the drag coefficient varies from figure to figure. When the coefficient is too small, the estimator predicts the state changes too quickly before it is corrected by the sensor value. When the coeffient is too large, the estimator predicts the state changes too slowly before it is corrected by the sensor value. The optimal drag value of roughly 40 gives the best performance when the robot is nearest the wall, which is when accuracy is the most important.
 
 <img src="graphs.PNG" class="img-responsive" alt="" width= 1100> 
 
