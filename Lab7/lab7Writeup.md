@@ -35,6 +35,6 @@ A combination of code and psuedo code is picutred in the diagram below to commun
 ## Results and Parameter Optimization
 The predicted state of the robot is shown in the figures below. The value of the drag coefficient varies from figure to figure. When the coeffient is too small, the estimator predicts the state changes too quickly before it is corrected by the sensor value. When the coeffient is too large, the estimator predicts the state changes too slowly before it is corrected by the sensor value. The optimal drag value of roughly 40 gives the best performance when the robot is nearest the wall, which is when accuracy is the most important.
 
-<img src="graphs.PNG" class="img-responsive" alt="" width= 900> 
+<img src="graphs.PNG" class="img-responsive" alt="" width= 1100> 
 
 
