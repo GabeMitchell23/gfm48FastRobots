@@ -20,6 +20,7 @@ The noise in the distance sensor was modeled as a guassian with zero mean and a 
 ## Matrices 
 Based upon the equations and constants described above, the matrices in the kalman filter took the following values
 
+<img src="matrices.PNG" class="img-responsive" alt="" width= 900> 
 
 ## Data Collection
 A video of the robot speeding towards the wall as data was collected is included below. The robot slightly moves back and forth because I implemented a controller to keep the robot moving straight. In past labs, the robot continuously veered left or right.
