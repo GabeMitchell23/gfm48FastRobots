@@ -17,8 +17,15 @@ When massed, the robot was 0.553 kg. The propulsive force was estimated to be 1N
 ## Parameter Estimation - Noise
 The noise in the distance sensor was modeled as a guassian with zero mean and a standard deviation of 0.1m. This was based upon observed values during previous ToF sensor labs. In the dynamics model, the proccess noise for the position and velocity estimation were modeled as guassians with zero mean and standard devitions of 1m and 1m/s respectively. The process noise was made 1 order of magnitude larger than the sensor noise so the the kalman filter would heavily weight the sensor information. 
 
+## Matrices 
+Based upon the equations and constants described above, the matrices in the kalman filter took the following values
+
+
 ## Data Collection
 A video of the robot speeding towards the wall as data was collected is included below. The robot slightly moves back and forth because I implemented a controller to keep the robot moving straight. In past labs, the robot continuously veered left or right.
 
 
 ## Kalman Filter Design
+A combination of code and psuedo code is picutred in the diagram below to communicate how I implemented designed the kalman filter. The code as 
+
+<img src="code_diagram.PNG" class="img-responsive" alt="" width= 900> 
