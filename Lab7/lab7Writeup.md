@@ -25,8 +25,15 @@ Based upon the equations and constants described above, the matrices in the kalm
 ## Data Collection
 A video of the robot speeding towards the wall as data was collected is included below. The robot slightly moves back and forth because I implemented a controller to keep the robot moving straight. In past labs, the robot continuously veered left or right.
 
+[Data Collection](https://www.youtube.com/shorts/BtrJDG9qOq8)
 
 ## Kalman Filter Design
 A combination of code and psuedo code is picutred in the diagram below to communicate how I implemented designed the kalman filter. The code as 
 
 <img src="code_diagram.PNG" class="img-responsive" alt="" width= 900> 
+
+## Results and Parameter Optimization
+The state of the 
+
+
+
