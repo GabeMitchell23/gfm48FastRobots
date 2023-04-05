@@ -10,7 +10,7 @@ The kalman filter was designed based based upon ToF sensor data collected as the
 ## Parameter Estimation - Physical Constants
 The robot's state was described with two terms, the position, x, and velocity, v. The physcis that governthe robot's state are described in the equations below; when manipulated, the equations estimate the changes in the robot's state. C_d is the drag coefficient, and F_prop is the propulsive force from the wheels moving the robot forward.
 
-<img src="Eqns.PNG" class="img-responsive" alt="" width= 900> 
+<img src="Eqns.PNG" class="img-responsive" alt="" width= 700> 
 
 When massed, the robot was 0.553 kg. The propulsive force was estimated to be 1N. The last unknown is the drag coefficent, which was optimized after the kalman filter was designed and compared to raw sensor data. 
 
@@ -20,7 +20,7 @@ The noise in the distance sensor was modeled as a guassian with zero mean and a 
 ## Matrices 
 Based upon the equations and constants described above, the matrices in the kalman filter took the following values
 
-<img src="matrices.PNG" class="img-responsive" alt="" width= 900> 
+<img src="matrices.PNG" class="img-responsive" alt="" width= 400> 
 
 ## Data Collection
 A video of the robot speeding towards the wall as data was collected is included below. The robot slightly moves back and forth because I implemented a controller to keep the robot moving straight. In past labs, the robot continuously veered left or right.
