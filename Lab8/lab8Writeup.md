@@ -33,4 +33,16 @@ The code from lab 6 along with the changes described above resulted in the robot
 [Turning Stunt](https://youtube.com/shorts/O7jtek9dTOw?feature=share)
 
 ## Lab 8 Data. 
-While performaing the stunt, the data the robot collected was ToF measurements, motor duty cycles, and yaw. The 
+While performing the stunt, the data the robot collected was ToF measurements, motor duty cycles, and yaw. The data is grouped by what stage of the stunt the robot was on. Graphs of each data set at each point in the stunt are included below. 
+
+## Pose Belief
+The most notable graph is the overlay of the robot's pose belief and the ToF sensor readings. For almost all instances where there was a ToF reading, the previous prediction via extrapolation was spot on. Additionally, the robot entered the turn portion of the stunt when its pose belief was extrapoled to very nearly 1m away from the wall. The robot did not need a TOF sensor measurement to continue with its stunt. 
+
+<img src="pose_tof_forward.PNG" class="img-responsive" alt="" width= 650> 
+
+## Yaw and Duty Cycles
+
+<img src="yaw_forward.PNG" class="img-responsive" alt="" width= 650> 
+<img src="dutycycle_forward.PNG" class="img-responsive" alt="" width= 650> 
+<img src="yaw_turn.PNG" class="img-responsive" alt="" width= 650> 
+<img src="dutycycle_turn.PNG" class="img-responsive" alt="" width= 650> 
