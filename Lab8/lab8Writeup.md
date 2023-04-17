@@ -41,6 +41,7 @@ The most notable graph is the overlay of the robot's pose belief and the ToF sen
 <img src="pose_tof_forward.PNG" class="img-responsive" alt="" width= 650> 
 
 ## Yaw and Duty Cycle Data
+I coded the robot to end the turning portion of its stunt after it reached 120 degrees. This was the most succesful way to get the robot to actually rotate roughly 180 degrees. Even after the robot stopped the turning portion at 120 degrees, its angular momentum carried it to roughly 180 degrees. 
 
 <img src="yaw_forward.PNG" class="img-responsive" alt="" width= 650> 
 <img src="dutycycle_forward.PNG" class="img-responsive" alt="" width= 650> 
