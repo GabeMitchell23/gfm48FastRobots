@@ -22,11 +22,13 @@ One problem I had in lab 6 was very erratic behavior when the robot turned. Anot
 ## Changes since Lab 6 - State Estimation
 My code did not use the kalman filter designed in lab 7 to update my belief in the robot's pose. Rather, I used simple extrapolation which was intermittently corrected by a ToF reading. The ToF readings were treated as the ground truth, so when there was a ToF reading, the state estimator placed the robot at the exact pose specified by the sensor reading. Extrapolation was done by assuming the current speed of the robot was the average speed between the two most recent ToF sensor measurements. This quantity multiplied by the change in time since the most recent ToF reading extrapolated the robot's pose. This simple state estimator was used in place of the kalman filter because it was much easier to implement, and it did not comprimise performance. A diagram of the new, simple state estimator is shown below. 
 
-
+<img src="extrapolation.PNG" class="img-responsive" alt="" width= 650> 
 
 ## Changes since Lab 6 - Closed Loop Control when Driving Forward.
+One challenge I had in lab 6 was making the robot drive in a straight line. This is becasue my right motor requires a much larger duty cycle to spin than my left motor. In lab 6, each motor had one constant duty cycle until the robot reached the wall and began its turn. In lab 8, I impletmented a PD controller with Kp = 1 and Kd = 0.3 to control the yaw of the robot as it drove towards the wall. The affects of this controller are discussed in the plots and videos below. 
 
+# Lab 8 Stunt
+The code from lab 6 along with the changes described above resulted in the robot performing as shown in the video. The time between the robot crossing the line at the beginning and end of the stunt is ~ 6 seconds. 
 
-
-https://youtube.com/shorts/O7jtek9dTOw?feature=share
+[Turning Stunt](https://youtube.com/shorts/O7jtek9dTOw?feature=share)
 
