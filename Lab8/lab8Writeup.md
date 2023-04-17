@@ -1,7 +1,7 @@
 # Lab 8 Coolest Video Submission
 After completing Lab 8, I taped my phone to my robot, as shown in the photos below. 
 
-<img src="cam1.jpg" class="img-responsive" alt="" width= 700> <img src="cam2.jpg" class="img-responsive" alt="" width= 700> 
+<img src="cam1.jpg" class="img-responsive" alt="" width= 350> <img src="cam2.jpg" class="img-responsive" alt="" width= 350> 
 
 This allowed me to record a first person view of the robot as it completed its stunt. This video is linked below.
 
