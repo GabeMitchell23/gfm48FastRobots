@@ -28,7 +28,9 @@ My code did not use the kalman filter designed in lab 7 to update my belief in t
 One challenge I had in lab 6 was making the robot drive in a straight line. This is becasue my right motor requires a much larger duty cycle to spin than my left motor. In lab 6, each motor had one constant duty cycle until the robot reached the wall and began its turn. In lab 8, I impletmented a PD controller with Kp = 1 and Kd = 0.3 to control the yaw of the robot as it drove towards the wall. The affects of this controller are discussed in the plots and videos below. 
 
 # Lab 8 Stunt
-The code from lab 6 along with the changes described above resulted in the robot performing as shown in the video. The time between the robot crossing the line at the beginning and end of the stunt is ~ 6 seconds. 
+The code from lab 6 along with the changes described above resulted in the robot performing as shown in the video. The time between the robot crossing the line at the beginning and end of the stunt is ~ 6 seconds. Note that both times the robot began to drive forward, it moved off of yaw = 0° very quickly. However, this offset was slowly corrected by the controller.  
 
 [Turning Stunt](https://youtube.com/shorts/O7jtek9dTOw?feature=share)
 
+## Lab 8 Data. 
+While performaing the stunt, the data the robot collected was ToF measurements, motor duty cycles, and yaw. The 
