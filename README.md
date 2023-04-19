@@ -19,3 +19,5 @@ I'm Gabe, a MEng student at Cornell University studying mechanical engineering. 
 [Lab 7, Kalman Filter](Lab7/lab7Writeup.html)
 
 [Lab 8, Turning Stunt](Lab8/lab8Writeup.html)
+
+[Lab 9, Mapping](Lab9/lab9Writeup.html)
