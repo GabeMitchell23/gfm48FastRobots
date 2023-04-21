@@ -13,4 +13,15 @@ The PD controller for yaw was borrowed from labs 6 and 8. As the robot rotates t
 <img src="Pduty.PNG" class="img-responsive" alt="" width= 400>
 
 ## Executing Code
-The video below shows the robot
+The video below shows the robot executing the code, rotating to specified positions, and taking ToF measurments. Note that the robot moved off of its starting point, which was a recurring issue while I conducted this lab. 
+
+## Data 
+In the polar coordinate plots below, the ToF data is shown centered at the five points that the robot rotated about. 
+
+<img src="polar.PNG" class="img-responsive" alt="" width= 400>
+
+## Post Processing and Analysis
+To convert the data from the robot frame to the global frame, transformtion matrices were used. A transformation matrix is an encoding of a rotation and translation that differentiate the point of view of one coordinate system and another. In two dimensions, a transformation matrix has the form shown below. The notation BI stands for body to inertial, so R_BI is the rotation matrix to go from the body fixed from to the inertial frame, if the two coordinate systems shared the same origin. The pos is the x,y coordinate of the robot in inertial/global frame. Multiplying a point in the body frame by the transformation matrix BI will return the coordinates of the point in the inertial frame. 
+
+When the data from all ther different rotation locations is overlayed 
+
