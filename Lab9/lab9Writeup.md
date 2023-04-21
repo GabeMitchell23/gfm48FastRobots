@@ -8,7 +8,7 @@ Psuedo code for my mapping function is shown below. My code used a PD controller
 
 <img src="psuedo.PNG" class="img-responsive" alt="" width= 800>
 
-The PD controller for yaw was borrowed from labs 6 and 8. As the robot rotates towards its target angular position, the duty cycle sent to the motors vary as seen in the graph below from lab 
+The PD controller for yaw was borrowed from labs 6 and 8. As the robot rotates towards its target angular position, the duty cycle sent to the motors vary as seen in the graph below from lab 6.
 
 <img src="Pduty.png" class="img-responsive" alt="" width= 600>
 
