@@ -15,6 +15,8 @@ The PD controller for yaw was borrowed from labs 6 and 8. As the robot rotates t
 ## Executing Code
 The video below shows the robot executing the code, rotating to specified positions, and taking ToF measurments. Note that the robot moved off of its starting point, which was a recurring issue while I conducted this lab. 
 
+[Robot Mapping](https://youtube.com/shorts/OlS8EkI7f7w?feature=share)
+
 ## Data 
 In the polar coordinate plots below, the ToF data is shown centered at the five points that the robot rotated about. 
 
