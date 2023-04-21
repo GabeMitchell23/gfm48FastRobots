@@ -18,7 +18,7 @@ The video below shows the robot executing the code, rotating to specified positi
 [Robot Mapping](https://youtube.com/shorts/OlS8EkI7f7w?feature=share)
 
 ## Data 
-In the polar coordinate plots below, the ToF data is shown centered at the five points that the robot rotated about. 
+In the polar coordinate plots below, the ToF data is shown centered at the five points that the robot rotated about. The distances are in meters
 
 <img src="polar.PNG" class="img-responsive" alt="" width= 700>
 
@@ -27,3 +27,4 @@ To convert the data from the robot frame to the global frame, transformtion matr
 
 When the data from all ther different rotation locations is overlayed, the following plot results. 
 
+<img src="mapping2.PNG" class="img-responsive" alt="" width= 700>
