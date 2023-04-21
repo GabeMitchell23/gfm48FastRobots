@@ -10,7 +10,7 @@ Psuedo code for my mapping function is shown below. My code used a PD controller
 
 The PD controller for yaw was borrowed from labs 6 and 8. As the robot rotates towards its target angular position, the duty cycle sent to the motors vary as seen in the graph below from lab 
 
-<img src="Pduty.PNG" class="img-responsive" alt="" width= 400>
+<img src="Pduty.png" class="img-responsive" alt="" width= 400>
 
 ## Executing Code
 The video below shows the robot executing the code, rotating to specified positions, and taking ToF measurments. Note that the robot moved off of its starting point, which was a recurring issue while I conducted this lab. 
