@@ -18,4 +18,9 @@ The updated belief in each position k is the product of the belief bar of pose k
 <img src="prediction.PNG" class="img-responsive" alt="" width= 800>
 
 ## Simulator Overview 
-The simulator 
+The simulator (picture below) allowed the user to manually steer the robot or create a predefined path. As the robot moved around the map, the Bayes filter estimated the pose. 
+
+<img src="simulate.PNG" class="img-responsive" alt="" width= 800>
+
+## Code
+Students were provided with code to interact with data output by the simulator, namely odometry and sensors. Students were also provided a code skeleton in which to implement different parts of the Bayes filter. The code skeleton consisted of 
