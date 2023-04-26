@@ -15,7 +15,7 @@ The prediction step determines the probability of each pose based upon odometry 
 ## Update
 The updated belief in each position k is the product of the belief bar of pose k and the likelyhood of the current sensor measurments given the predicted pose. To find the second probability in the product, current sensor measurments are compared with expected sensor measurments, which are calculated using the inverse sensor model. 
 
-<img src="prediction.PNG" class="img-responsive" alt="" width= 800>
+<img src="update.PNG" class="img-responsive" alt="" width= 800>
 
 ## Simulator Overview 
 The simulator (picture below) allowed the user to manually steer the robot or create a predefined path. As the robot moved around the map, the Bayes filter estimated the pose. 
