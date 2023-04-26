@@ -22,7 +22,7 @@ The simulator (picture below) allowed the user to manually steer the robot or cr
 
 <img src="simulate.PNG" class="img-responsive" alt="" width= 800>
 
-# Code
+# Code Overview
 Students were provided with code to interact with data output by the simulator, namely odometry and sensors. Students were also provided a code skeleton in which to implement different parts of the Bayes filter. The code skeleton called functions which students completed.
 
 ## compute_control
@@ -40,5 +40,6 @@ The third function was prediction_step, which executed the prediciton step of th
 
 <img src="prediction_step_pseduo.PNG" class="img-responsive" alt="" width= 800>
 
-## 
+# Code
+In the simulator, I used code written by Anya Parabow from the previous year's class. Her lab report for this lab as well as her code are linked here.
 
