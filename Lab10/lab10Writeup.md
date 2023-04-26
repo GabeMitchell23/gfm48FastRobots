@@ -22,5 +22,16 @@ The simulator (picture below) allowed the user to manually steer the robot or cr
 
 <img src="simulate.PNG" class="img-responsive" alt="" width= 800>
 
-## Code
-Students were provided with code to interact with data output by the simulator, namely odometry and sensors. Students were also provided a code skeleton in which to implement different parts of the Bayes filter. The code skeleton consisted of 
+# Code
+Students were provided with code to interact with data output by the simulator, namely odometry and sensors. Students were also provided a code skeleton in which to implement different parts of the Bayes filter. The code skeleton called functions which students completed.
+
+## compute_control
+The first funntion was compute control, which took two robot positions as input and output odometry data. The odometry data had 3 terms: rotation 1, translation, and rotation2. The three terms are defined as in the diagram below. Pseudo code for the function is also shown below. 
+
+<img src="compute_control.PNG" class="img-responsive" alt="" width= 800> <img src="compute_control_pseudo.PNG" class="img-responsive" alt="" width= 800>
+
+## odom_motion_model
+The second function, odom_motion_model, took two positions and a control as input. The code output the probability that the robot started at one positions and ended at the other given the control. The form of the control was the same as that in compute control: rotation 1, translation, and rotation2.
+
+<img src="odom_motion_model.PNG" class="img-responsive" alt="" width= 800>
+
