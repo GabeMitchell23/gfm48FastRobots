@@ -55,4 +55,5 @@ In the simulator, I used code written by Anya Parabow from the previous year's c
 
 # State Estimation
 When Implemented, the bayes filter estimated the state as shown below. The estimation with just odometry is in red, the truth pose is in green, and the belief is in blue.
+
 <img src="plot.PNG" class="img-responsive" alt="" width= 800>
