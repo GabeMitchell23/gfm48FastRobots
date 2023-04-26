@@ -33,22 +33,22 @@ The first funntion was compute control, which took two robot positions as input 
 ## odom_motion_model
 The second function, odom_motion_model, took two positions and a control as input. The code output the probability that the robot started at one positions and ended at the other given the control. The form of the control was the same as that in compute control: rotation 1, translation, and rotation2.
 
-<img src="odom_motion_model_pseduo.PNG" class="img-responsive" alt="" width= 800>
+<img src="odom_motion_model_pseudo.PNG" class="img-responsive" alt="" width= 800>
 
 ## prediction_step
 The third function was prediction_step, which executed the prediciton step of the bayes filter and defined bel_bar. The function had six nest for loops in total: the outer three loops iterated through all previous positions. The inner three for loops iterated through all current positions. For each set of previous and current position, the function found the probability of getting from the previous to the current and multiplied that quanity by the belief in the previous position. Pseudo code for the function is shown below. 
 
-<img src="prediction_step_pseduo.PNG" class="img-responsive" alt="" width= 800>
+<img src="prediction_step_pseudo.PNG" class="img-responsive" alt="" width= 800>
 
 ## sensor_model
 The fourth function, sensor_model, determines how likely the actual sensor measurements are if the robot were in a position which returned the sensor readings given in the input. This is the inverse sensor model. Pseudo code for the inverse sensor model is below.
 
-<img src="sensor_model_pseduo.PNG" class="img-responsive" alt="" width= 800>
+<img src="sensor_model_pseudo.PNG" class="img-responsive" alt="" width= 800>
 
 ## update_step
 The last function was update_step, which executed the update step of the bayes filter and updated the belief in the state. The function iterated through every current pose. For each pose, the existing belief of the pose (from bel_bar) was multiplied by the likelyhood of the pose as determined by the inverse sensor model function. The pseudo code for the update step is shown below. 
 
-<img src="update_step_pseduo.PNG" class="img-responsive" alt="" width= 800>
+<img src="update_step_pseudo.PNG" class="img-responsive" alt="" width= 800>
 
 # Code
 In the simulator, I used code written by Anya Parabow from the previous year's class. Her lab report for this lab as well as her code are linked [here](https://anyafp.github.io/ece4960/labs/lab11/).
