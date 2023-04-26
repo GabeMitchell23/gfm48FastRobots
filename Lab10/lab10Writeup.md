@@ -40,6 +40,9 @@ The third function was prediction_step, which executed the prediciton step of th
 
 <img src="prediction_step_pseduo.PNG" class="img-responsive" alt="" width= 800>
 
+## sensor_model
+The fourth function, sensor_model, determines how likely the actual sensor measurements are if the robot were in a position which returned the sensor readings given in the input. This is the inverse sensor model. Pseudo code for the inverse sensor model is below.
+
 # Code
-In the simulator, I used code written by Anya Parabow from the previous year's class. Her lab report for this lab as well as her code are linked here.
+In the simulator, I used code written by Anya Parabow from the previous year's class. Her lab report for this lab as well as her code are linked [here](https://youtu.be/qYq4uiy29VA](https://anyafp.github.io/ece4960/labs/lab11/).
 
