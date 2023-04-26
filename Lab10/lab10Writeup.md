@@ -43,6 +43,16 @@ The third function was prediction_step, which executed the prediciton step of th
 ## sensor_model
 The fourth function, sensor_model, determines how likely the actual sensor measurements are if the robot were in a position which returned the sensor readings given in the input. This is the inverse sensor model. Pseudo code for the inverse sensor model is below.
 
+<img src="sensor_model_pseduo.PNG" class="img-responsive" alt="" width= 800>
+
+## update_step
+The last function was update_step, which executed the update step of the bayes filter and updated the belief in the state. The function iterated through every current pose. For each pose, the existing belief of the pose (from bel_bar) was multiplied by the likelyhood of the pose as determined by the inverse sensor model function. The pseudo code for the update step is shown below. 
+
+<img src="update_step_pseduo.PNG" class="img-responsive" alt="" width= 800>
+
 # Code
 In the simulator, I used code written by Anya Parabow from the previous year's class. Her lab report for this lab as well as her code are linked [here](https://anyafp.github.io/ece4960/labs/lab11/).
 
+# State Estimation
+When Implemented, the bayes filter estimated the state as shown below. The estimation with just odometry is in red, the truth pose is in green, and the belief is in blue.
+<img src="plot.PNG" class="img-responsive" alt="" width= 800>
