@@ -12,8 +12,13 @@ I was unable to collect data specifically for lab 11. Instead, I used existing d
 [Robot Collecting ToF Data](https://youtube.com/shorts/OlS8EkI7f7w?feature=share)
 
 ## Analysis
-The robot collected ToF data at the following positions: (-3,-2), (0,0), (0,3), (5,-3), (5,3). After running the filter with data collected at these positions, the filter updated the belief in the pose as shown. 
+The robot collected ToF data at the following positions: (-3,-2), (0,0), (0,3), (5,-3), (5,3). After running the filter with data collected at these positions, the filter updated the belief in the pose as shown. The belief is the blue dot, and the truth pose is in green x. 
 
 
+<img src="n3n2_truth.PNG" class="img-responsive" alt="" width= 800>
+<img src="p5n3t2_truth_truth.PNG" class="img-responsive" alt="" width= 800>
+<img src="p5p3_truth.PNG" class="img-responsive" alt="" width= 800>
+<img src="zz_truth.PNG" class="img-responsive" alt="" width= 800>
+<img src="zp3_truth.PNG" class="img-responsive" alt="" width= 800>
 
 
