@@ -14,23 +14,23 @@ I was unable to collect data specifically for lab 11. Instead, I used existing d
 ## Analysis
 The robot collected ToF data at the following positions: (-3,-2), (0,0), (0,3), (5,-3), (5,3). The positions here are listed in feet, althought the graphs are in meters. After running the filter with data collected at these positions, the filter updated the belief in the pose as shown. The belief is the blue dot, and the truth pose is in green x. 
 
-Localization for Robot at (-3ft, -2ft) \<br>
+Localization for Robot at (-3ft, -2ft) <br />
 <img src="n3n2_truth.PNG" class="img-responsive" alt="" width= 650>
 
 
-Localization for Robot at (5ft, -3ft) \<br>
+Localization for Robot at (5ft, -3ft) <br />
 <img src="p5n3t2_truth.PNG" class="img-responsive" alt="" width= 650>
 
 
-Localization for Robot at (5ft, 3ft) \<br>
+Localization for Robot at (5ft, 3ft) <br />
 <img src="p5p3_truth.PNG" class="img-responsive" alt="" width= 650>
 
 
-Localization for Robot at (0ft, 0ft) \<br>
+Localization for Robot at (0ft, 0ft) <br />
 <img src="zz_truth.PNG" class="img-responsive" alt="" width= 650>
 
 
-Localization for Robot at (0ft, 3ft) \<br>
+Localization for Robot at (0ft, 3ft) <br />
 <img src="zp3_truth.PNG" class="img-responsive" alt="" width= 650>
 
 
