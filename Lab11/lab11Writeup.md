@@ -7,9 +7,13 @@ The Bayes Filter consists of two steps, the math for which is shown below. The 3
 <img src="bayes_math.PNG" class="img-responsive" alt="" width= 800>
 
 ## Data Collection
-I was unable to collect data specifically for lab 11. Instead, I used existing data from [lab 9](https://gabemitchell23.github.io/gfm48FastRobots/Lab9/lab9Writeup.html), which was used to generate a map of the arena. Notably, the knowns and and unkowns swapped from lab 9 to lab 11. In lab 9, the robot's position with respect to a global reference frame was known, but the location of the map was not. In lab 11, the position of the map with respect to the global frame was known, but the robot's position was not. Despite the discrepancy, the data needed for both labs was identical: the robot rotating in place while collecting ToF measurements. A video of the robot collecting data for lab 9 is included below. 
+I was unable to collect data specifically for lab 11. Instead, I used existing data from [lab 9](https://gabemitchell23.github.io/gfm48FastRobots/Lab9/lab9Writeup.html), which was used to generate a map of the arena. Notably, the knowns and and unkowns swapped from lab 9 to lab 11. In lab 9, the robot's position with respect to a global reference frame was known, but the location of the map was not. In lab 11, the position of the map with respect to the global frame was known, but the robot's position was not. Despite the discrepancy, the data needed for both labs was identical: the robot rotating in place while collecting ToF measurements. A video of the robot collecting data for lab 9 is included below. The robot was controlled with a PD controller that rotated it in 20 degree increments between ToF readings. 
+
+[Robot Collecting ToF Data](https://youtube.com/shorts/OlS8EkI7f7w?feature=share)
 
 ## Analysis
+The robot collected ToF data at the following positions: (-3,-2), (0,0), (0,3), (5,-3), (5,3). After running the filter with data collected at these positions, the filter updated the belief in the pose as shown. 
+
 
 
 
