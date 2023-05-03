@@ -11,7 +11,7 @@ I was unable to collect data specifically for lab 11. Instead, I used existing d
 
 [Robot Collecting ToF Data](https://youtube.com/shorts/OlS8EkI7f7w?feature=share)
 
-## Analysis
+## Update
 The robot collected ToF data at the following positions: (-3,-2), (0,0), (0,3), (5,-3), (5,3). The positions here are listed in feet, althought the graphs are in meters. After running the filter with data collected at these positions, the filter updated the belief in the pose as shown. The belief is the blue dot, and the truth pose is in green x. 
 
 Localization for Robot at (-3ft, -2ft)
@@ -42,4 +42,7 @@ Localization for Robot at (0ft, 3ft)
 
 <img src="zp3_truth.PNG" class="img-responsive" alt="" width= 650>
 
+
+## Performance Analysis
+Only 2 of 5 localization runs produced a remotely accurate belief. I attribute the poor performance to the robot moving away from the start point while it is supposed to only be rotating. This happens because rotating about the center of a 4 wheel vehicle is much more difficult than rotating about the center of a 2 wheel vehicle. A solution for the last lab could be propping the rear wheels up and having a low-friction slider contact the groud in their place. 
 
