@@ -19,7 +19,7 @@ Localization for Robot at (-3ft, -2ft)
 
 
 Localization for Robot at (5ft, -3ft)
-<img src="p5n3t2_truth_truth.PNG" class="img-responsive" alt="" width= 800>
+<img src="p5n3t2_truth.PNG" class="img-responsive" alt="" width= 800>
 
 
 Localization for Robot at (5ft, 3ft)
