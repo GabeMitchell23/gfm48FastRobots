@@ -25,3 +25,5 @@ I'm Gabe, a MEng student at Cornell University studying mechanical engineering. 
 [Lab 10, Bayes Filter Simulation](Lab10/lab10Writeup.html)
 
 [Lab 11, Bayes Filter on the Robot](Lab11/lab11Writeup.html)
+
+[Lab 12, Navigation](Lab12/lab12Writeup.html)
