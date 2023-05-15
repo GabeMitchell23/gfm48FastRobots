@@ -15,7 +15,7 @@ A possible navigation solution that I did not use was bayes filter localization,
 ## Executing Navigation
 I was unable to perform the lab during open hours, so I constructed the arena in my own space. The arena is pictured below. 
 
-<img src="arena_set.PNG" class="img-responsive" alt="" width= 800>
+<img src="arena_set.PNG" class="img-responsive" alt="" width= 1000>
 
 The robot moving through the map as controlled by the navigation function is shown below. The robot reached 3 waypoints. 
 
