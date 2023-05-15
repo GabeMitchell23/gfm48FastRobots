@@ -19,4 +19,4 @@ I was unable to perform the lab during open hours, so I constructed the arena in
 
 The robot moving through the map as controlled by the navigation function is shown below. The robot reached 3 waypoints. 
 
-[Robot Mapping](https://youtube.com/shorts/OlS8EkI7f7w?feature=share)
+[Robot Navigation](https://studio.youtube.com/video/WWS3_pg9Sys/edit)
