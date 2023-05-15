@@ -10,4 +10,13 @@ To follow the path, the robot either drove forward from one node to another, or 
 ## Strategy Options Not Used
 A possible navigation solution that I did not use was bayes filter localization, as developed in [lab 11](https://gabemitchell23.github.io/gfm48FastRobots/Lab11/lab11Writeup.html). It would have been most intuitive to implement this solution after driving forward and before turning. Before each turn, the robot could have in thoery relocalized. However, the performance of the bayes filter in lab 11 was severely hampered by my robot's inability to stay in one location while rotating, as shown in the video below. Because the bayes filter could not be run on my robot in particular, I did not incorporate it into my navigation function. 
 
+[Robot Mapping](https://youtube.com/shorts/OlS8EkI7f7w?feature=share)
 
+## Executing Navigation
+I was unable to perform the lab during open hours, so I constructed the arena in my own space. The arena is pictured below. 
+
+<img src="arena_set.PNG" class="img-responsive" alt="" width= 800>
+
+The robot moving through the map as controlled by the navigation function is shown below. The robot reached 3 waypoints. 
+
+[Robot Mapping](https://youtube.com/shorts/OlS8EkI7f7w?feature=share)
